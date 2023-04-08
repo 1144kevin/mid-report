@@ -6,6 +6,7 @@ import { addCartItems, removeCartItems } from "../../redux/cartSlice";
 import styles from "./basketmodal.module.css"
 import { CartIcon } from "./Icons";
 import { selectCartItems } from "../../redux/cartSlice";
+import { HeartFilled } from '@ant-design/icons';
 const { Option } = Select;
 
 export default function BasketModal({ isOpen, toggleModal }) {
@@ -21,7 +22,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
 
    return (
       <Modal
-         title="Shopping Basket"
+         title="我的最愛"
          open={isOpen}
          onCancel={handleCancel}
          footer={null}
@@ -78,8 +79,10 @@ export default function BasketModal({ isOpen, toggleModal }) {
             className={styles.btn}
             type="primary"
          >
-            <CartIcon size={20} color={"#ffffff"}/>
-            <span style={{ marginLeft: 12 }}>Start Checkout</span>
+           <HeartFilled 
+          style={{fontSize:"20px",color:"white"}}
+          />
+            <span style={{ marginLeft: 5 }}>保存</span>
          </Button>
       </Modal>
    );

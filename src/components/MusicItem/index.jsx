@@ -17,7 +17,8 @@ export default function MusicItem({ product }) {
             <div className={styles.more}>
                <Link to={`/products/id/${product.id}`} className={styles.link}>
                   <div className={styles.heart}>
-                     <HeartOutlined />
+                     <HeartOutlined 
+                     style={{fontSize:"20px"}}/>
                   </div>
                </Link>
             </div>
@@ -31,7 +32,11 @@ export default function MusicItem({ product }) {
             <audio controls style={{width:"270px",height:"30px"}}>
                <source src={product.audio} type="audio/mpeg" />
             </audio>
-            
+            <div className={styles.lyric} style={{display:"none"}}>
+               <p>
+               {product.lyrics}
+               </p>
+            </div>
             
 
          </div>

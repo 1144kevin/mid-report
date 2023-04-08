@@ -1,14 +1,19 @@
 /* Cart */
 .btn {
-  width: 100%;
-  font-size: 1.1rem;
-  font-weight: lighter;
+  width: 60%;
+  font-size: 1rem;
+  font-weight:900;
   padding: 0.7rem;
   height: auto;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f08840;
+  margin-left: 6rem;
+}
+.btn:hover{
+  background-color: #f08840;
 }
 
 .item {
@@ -22,8 +27,8 @@
 }
 
 .image {
-  max-width: 4rem;
-  max-height: 4rem;
+  max-width: 6rem;
+  max-height: 6rem;
   flex: 1 1;
 }
 

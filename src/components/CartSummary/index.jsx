@@ -18,9 +18,9 @@ export default function CartSummary() {
   return (
     <>
       <nav onClick={toggleOpen} className={styles.cartSummary} >
-        <Badge count={count} color="#6366F2" style={{color: 'white'}}>
+        <Badge count={count} color="#000000" style={{color: 'white'}}>
           <HeartFilled 
-          style={{fontSize:"30px",color:"red"}}
+          style={{fontSize:"30px",color:"#f08840"}}
           />
         </Badge>
         <p className={styles.cartText}> 我的最愛 </p>

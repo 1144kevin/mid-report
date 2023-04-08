@@ -28,7 +28,7 @@ export default function AddToCart({ product, qty }) {
   };
 
   return (
-    <Button type="primary" className={styles.btn} onClick={addToCart}>
+    <Button type="primary" color="#000000" className={styles.btn} onClick={addToCart}>
       <img className={styles.image} src="/images/basket.svg" />Add To Basket
     </Button>
   );

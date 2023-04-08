@@ -9,13 +9,13 @@ export const data1 = [
       "info3":"浪漫速成班",
       "image4": "/images/video2-4.jpg",
       "info4":"二十五 二十一",
-      "image5": "/images/video1-3.jpg",
+      "image5": "/images/video2-5.jpg",
       "info5":"紙房子",
-      "image6": "/images/video1-3.jpg",
+      "image6": "/images/video2-6.jpg",
       "info6":"紙房子",
-      "image7": "/images/video1-3.jpg",
-      "info7":"紙房子",
-      "image8": "/images/video1-1.jpg",
-      "info8":"紙房子"
+      "image7": "/images/video2-7.jpg",
+      "info7":"殭屍校園",
+      "image8": "/images/video2-8.jpeg",
+      "info8":"金秘書為何那樣"
     },
   ]
