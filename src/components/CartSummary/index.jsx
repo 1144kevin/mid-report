@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Badge, theme } from "antd";
 import BasketModal from "../BasketModal"
-import { CartIcon } from "./Icons";
 import styles from "./cartsummary.module.css"
 import { selectCartItems } from "../../redux/cartSlice";
+import { HeartFilled } from '@ant-design/icons';
 
 export default function CartSummary() {
   const { token: { colorTextBase }} = theme.useToken();
@@ -19,9 +19,11 @@ export default function CartSummary() {
     <>
       <nav onClick={toggleOpen} className={styles.cartSummary} >
         <Badge count={count} color="#6366F2" style={{color: 'white'}}>
-          <CartIcon size={32} color={colorTextBase} />
+          <HeartFilled 
+          style={{fontSize:"30px",color:"red"}}
+          />
         </Badge>
-        <p className={styles.cartText}> 我的片單 </p>
+        <p className={styles.cartText}> 我的最愛 </p>
       </nav>    
       <BasketModal
         isOpen={isOpen}

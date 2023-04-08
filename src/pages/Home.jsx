@@ -5,6 +5,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import MusicList from "../components/MusicList";
 import products from "../json/products.json";
+import videos from "../json/videos.json";
 import Carouseldemo from '../components/Carousel';
 import VideoList from '../components/VideoList';
 import Newnews from '../components/Newnews';
@@ -43,7 +44,7 @@ function Home() {
       />
       <Carouseldemo/>
       <Newnews/>
-      <VideoList/>
+      <VideoList />
       <div className="layoutCOntent container">
         <MusicList products={_products} />
       </div>

@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './person.css';
-
+import { AiFillCaretLeft} from "react-icons/ai";
 
 
 export default function Person() {
@@ -14,6 +14,8 @@ export default function Person() {
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
+        arrows:true,
+      
         responsive: [
             {
                 breakpoint: 1024,
@@ -33,7 +35,9 @@ export default function Person() {
             }
         ]
     };
+    
     return (
+        
         <div class="container-fluid" style={{ paddingLeft: "0", paddingRight: "0", backgroundColor: "black", }}>
             <div class="row">
                 <div class="col-lg-12">
@@ -44,6 +48,7 @@ export default function Person() {
                 </div>
             </div>
             <div className={styles.carousel}>
+      
                 <Slider {...settings}>
                     <div className={styles.box}>
                         <img
@@ -99,6 +104,10 @@ export default function Person() {
                     
 
                 </Slider>
+                 {/* <Buttons>
+                    <button> <AiFillCaretLeft/></button>
+                    <button> <AiFillCaretLeft/></button>
+                 </Buttons> */}
             </div>
         </div>
 
