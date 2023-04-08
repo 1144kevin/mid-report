@@ -1,0 +1,30 @@
+[
+  { 
+    "id": "1",
+    "category": "<太陽的後裔>",
+    "name": "CHEN(첸) & Punch(펀치) - Everytime",
+    "image": "/images/music1.jpg",
+    "audio":"/Media/everytime.mp3"
+  },
+  {
+    "id": "2",
+    "category": "<梨泰院Class>",
+    "name": "Gaho - Beginning",
+    "image": "/images/music2.jpg",
+    "audio":"/Media/beginning.mp3"
+  },
+  {
+    "id": "3",
+    "category": "<花郎>",
+    "name": "V&JIN(BTS) - It's Definitely You",
+    "image": "/images/music3.jpg",
+    "audio":"/Media/It's Definitely You.mp3"
+  },
+  {
+    "id": "4",
+    "category": "<鬼怪>",
+    "name": "CHANYEOL, PUNCH - Stay With Me",
+    "image": "/images/music4.jpg",
+    "audio":"/Media/staywithme.mp3"
+  }
+]
