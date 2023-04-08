@@ -1,0 +1,149 @@
+/* Header Style */
+.contact {
+	height:1000px;
+	padding-top: 100px;
+	background-image: url(../images/ob.jpg );
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top center;
+}
+
+.contact.title {
+	color:#ffffff;
+}
+
+.contact .form {
+	max-width: 500px;
+	margin:0 auto;
+	padding: 0 30px;
+	color:rgb(255, 172, 130);
+    font-family:'KurewaGothicCjkTc-Bold';
+}
+
+.form input {
+	height: 40px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	border:0px;
+	padding: 12px;
+	resize: vertical;
+	color:rgb(255, 172, 130);
+	margin:7.5px 0;
+    box-shadow:2px 2px 4px rgb(10, 35, 97);
+    font-family:'KurewaGothicCjkTc-Bold';
+}
+input[type=submit] {
+  background-color:rgb(10, 35, 97);
+  color: white;
+  cursor: pointer;
+  width: 100px!important;
+  height: 48px;
+  margin-top:30px ;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(255, 172, 130);
+  color:rgb(10, 35, 97);
+}
+ .logo{
+    height: 100px;
+} 
+.logoimg{
+    width: 50px;
+}
+.logoimg:hover{
+    transform: scale(1.3);
+}
+.socialmedia{
+    display: flex;
+    display: block;
+    text-decoration:none;
+    padding:0px 0px 0 0;
+    text-align: center;
+}
+
+.mediaicon:hover{
+    transform: scale(1.1);
+  }
+.mediaicon{
+    width:30px;
+    height:30px;
+}
+.title3{
+    margin-bottom: 0px;
+    color:rgb(10, 35, 97);
+    font-family:'KurewaGothicCjkTc-Bold';
+    text-align: left;
+}
+.title4{
+    margin-bottom: 0px;
+    color:rgb(10, 35, 97);
+    font-family:'KurewaGothicCjkTc-Bold';
+    text-align: left;
+}
+.enter{
+    margin-bottom: 10px;
+}
+.titleline {
+	margin-top: 30px;
+    border:rgb(10, 35, 97) 1.5px solid ;
+    border-radius: 50px;
+}
+.title2line {
+	margin-top: 40px;
+    border:rgb(10, 35, 97) 1.5px solid ;
+    border-radius: 50px;
+}
+.Continue{
+    margin-top: 30px;
+    color: rgb(10, 35, 97);
+}
+.square{
+    width: 20px;
+    height: 20px;
+}
+.square:hover{
+    transform: scale(1.1);
+}
+.squareRemeber{
+    display: flex;
+}
+.Remeber{
+  color: rgb(10, 35, 97);
+}
+.Remeber:hover{
+  transform: scale(1.2);
+  color: rgb(255, 172, 130);
+}
+.last{
+    margin-bottom: 20px;
+}
+.dont{
+    font-family:'KurewaGothicCjkTc-Bold';
+    color: rgb(10, 35, 97);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.Sign{
+    font-family:'KurewaGothicCjkTc-Bold';
+    color: rgb(10, 35, 97);
+    text-align: center;
+}
+.Sign:hover{
+  transform: scale(1.2);
+  color: rgb(255, 172, 130);
+}
+.sign{
+  color: rgb(10, 35, 97);
+    cursor: pointer;
+    font-size: 48px;
+    font-family:'KurewaGothicCjkTc-Bold';
+}
+.back{
+  backdrop-filter:contrast(60%); /* 對比效果 */
+  -webkit-backdrop-filter:contrast(50%);
+  border-radius: 50px;
+}
