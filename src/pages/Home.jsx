@@ -42,7 +42,6 @@ function Home() {
         slogan="An example made by Vite."
       />
       <Carouseldemo/>
-      <h1>111</h1>
       <Newnews/>
       <VideoList/>
       <div className="layoutCOntent container">
