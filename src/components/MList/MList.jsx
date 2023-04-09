@@ -12,7 +12,7 @@ export default function MList() {
       title: 'Stay With Me(CHANYEOL,PUNCH)',
       name: '鬼怪',
       image2: '../images/heart.png',
-      song: '/media/staywithme.mp3'
+      song: '/Media/staywithme.mp3'
     },
     {
       number:'2.',
@@ -20,7 +20,7 @@ export default function MList() {
       title: 'Everytime(CHEN,PUNCH)',
       name: '太陽的後裔',
       image2: '../images/heart.png',
-      song: '/media/everytime.mp3'
+      song: '/Media/everytime.mp3'
     },
     {
       number:'3.',
@@ -28,7 +28,7 @@ export default function MList() {
       title: 'Beginning(Gaho)',
       name: '梨泰院class',
       image2: '../images/heart.png',
-      song: '/media/CLASS.mp3'
+      song: '/Media/CLASS.mp3'
     },
     {
       number:'4.',
@@ -36,7 +36,7 @@ export default function MList() {
       title: 'Its Definitely You(V,JIN)',
       name: '花郎',
       image2: '../images/heart.png',
-      song: "/media/It's Definitely You.mp3"
+      song: "/Media/It's Definitely You.mp3"
     },
     {
       number:'5.',
@@ -44,7 +44,7 @@ export default function MList() {
       title: 'ALWAYS(尹美萊)',
       name: '太陽的後裔',
       image2: '../images/heart.png',
-      song: '/media/ALWAYS.mp3'
+      song: '/Media/ALWAYS.mp3'
     },
     {
       number:'6.',
@@ -52,7 +52,7 @@ export default function MList() {
       title: 'My Destiny(LYn)',
       name: '來自星星的你',
       image2: '../images/heart.png',
-      song: '/media/My Destiny.mp3'
+      song: '/Media/My Destiny.mp3'
     },
     {
       number:'7.',
@@ -60,7 +60,7 @@ export default function MList() {
       title: 'Love, Maybe(MeloMance)',
       name: '社內相親',
       image2: '../images/heart.png',
-      song: '/media/Love Maybe.mp3'
+      song: '/Media/Love Maybe.mp3'
     },
     {
       number:'8.',
@@ -68,7 +68,7 @@ export default function MList() {
       title: 'Friend(Kim Hee Won)',
       name: '雪降花',
       image2: '../images/heart.png',
-      song: '/media/Friend.mp3'
+      song: '/Media/Friend.mp3'
     },
     {
       number:'9.',
@@ -76,7 +76,7 @@ export default function MList() {
       title: 'First love(宇多田ヒカル)',
       name: '初恋',
       image2: '../images/heart.png',
-      song: '/media/First Love.mp3'
+      song: '/Media/First Love.mp3'
     },
     {
       number:'10.',
@@ -84,7 +84,7 @@ export default function MList() {
       title: 'Touch Love(尹美萊)',
       name: '主君的太陽',
       image2: '../images/heart.png',
-      song: '/media/Touch Love.mp3'
+      song: '/Media/Touch Love.mp3'
     },
   ]);
 
