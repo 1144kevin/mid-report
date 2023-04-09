@@ -12,7 +12,7 @@ export const data2 = [
       "image5": "/images/video3-5.jpeg",
       "info5":"鈴芽之旅",
       "image6": "/images/video3-6.jpeg",
-      "info6":"那些年",
+      "info6":"那些年 我們一起追的女孩",
       "image7": "/images/video3-7.jpeg",
       "info7":"我的少女時代",
       "image8": "/images/video3-8.jpeg",

@@ -7,14 +7,14 @@
 padding:2rem 5rem;
 background-color: black;
 color: white;
-height:530px;
+height:auto;
 width: 100vw;
 }
 .box{
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height:auto;
     padding: 0 3rem 0 1.5rem;
     
 }

@@ -1,8 +1,8 @@
 import { Button, notification } from "antd"
 import { useDispatch } from "react-redux";
 import { addCartItems } from "../../redux/cartSlice";
-import styles from "./addtobasket.module.css"
-import { HeartFilled } from '@ant-design/icons';
+import styles from "./addtobasket2.module.css"
+import { HeartOutlined } from '@ant-design/icons';
 
 export default function AddToCart({ product, qty }) {
   const dispatch = useDispatch();
@@ -29,8 +29,8 @@ export default function AddToCart({ product, qty }) {
   };
 
   return (
-    <Button type="primary" color="#000000" className={styles.btn} onClick={addToCart}>
-      <h6>ADD</h6>
+    <Button color="yellow" className={styles.btn} onClick={addToCart} >
+       <HeartOutlined  style={{fontSize:"20px"}}/>
     </Button>
   );
 }

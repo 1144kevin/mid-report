@@ -28,7 +28,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
          footer={null}
       >
          {cartItems.length === 0 ? (
-            <div>Cart is empty</div>
+            <div>Your favorite is empty</div>
          ) : (
             cartItems.map(item => (
                <li key={item.id} className={styles.item}>
@@ -82,7 +82,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
            <HeartFilled 
           style={{fontSize:"20px",color:"white"}}
           />
-            <span style={{ marginLeft: 5 }}>保存</span>
+            <span style={{ marginLeft: 5 }}>save</span>
          </Button>
       </Modal>
    );

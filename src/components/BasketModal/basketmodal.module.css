@@ -13,7 +13,8 @@
   margin-left: 6rem;
 }
 .btn:hover{
-  background-color: #f08840;
+  opacity: 0.8;
+  background-color: #f08840 !important;
 }
 
 .item {

@@ -16,10 +16,10 @@ export default function ProductList({ products }) {
           <hr className={styles.hrHeaderLine} />
         </div>
       </div>
-      <Row gutter={[32, 32]}>
+      <Row gutter={[64, 32]} >
         {products.map(product => (
           <Col
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ display: "flex", justifyContent: "center",alignItems:"center"}}
             sm={{ span: 12 }}
             lg={{ span: 8 }}
             xl={{ span: 6 }}

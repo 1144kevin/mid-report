@@ -1,6 +1,6 @@
-import { HeartOutlined } from '@ant-design/icons';
 import Link from '../Link';
 import styles from './musicitem.module.css';
+import AddToBasket2 from "../AddToBasket2";
 
 export default function MusicItem({ product }) {
 
@@ -8,19 +8,14 @@ export default function MusicItem({ product }) {
       <div className={styles.item}>
          <Link to={`/products/id/${product.id}`}>
             <img
-               style={{ width: '100%' ,height:"13rem" }}
+               style={{ width: "20rem", height: "13rem" }}
                src={product.image}
                alt={product.name} />
          </Link>
          <div className={styles.info}>
 
             <div className={styles.more}>
-               <Link to={`/products/id/${product.id}`} className={styles.link}>
-                  <div className={styles.heart}>
-                     <HeartOutlined 
-                     style={{fontSize:"20px"}}/>
-                  </div>
-               </Link>
+               <AddToBasket2 product={product} qty={1} />
             </div>
             <h6 className={styles.category}>
                {product.category}
@@ -28,16 +23,16 @@ export default function MusicItem({ product }) {
             <h6 className={styles.name}>
                {product.name}
             </h6>
-            
-            <audio controls style={{width:"270px",height:"30px"}}>
+
+            <audio controls style={{ width: "270px", height: "30px" }}>
                <source src={product.audio} type="audio/mpeg" />
             </audio>
-            <div className={styles.lyric} style={{display:"none"}}>
+            <div className={styles.lyric} style={{ display: "none" }}>
                <p>
-               {product.lyrics}
+                  {product.lyrics}
                </p>
             </div>
-            
+
 
          </div>
       </div>
