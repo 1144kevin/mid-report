@@ -1,0 +1,22 @@
+.cartSummary {
+   display: inline-block;
+   position: absolute;
+   top: 0.5rem;
+   right: 0.5rem;
+   cursor: pointer;
+ }
+ 
+ .cartText {
+   font-size: 0.8rem;
+   margin-top: -4px;
+   font-weight: 900;
+   opacity: 0.8;
+   color: white;
+ }
+
+ @media (min-width: 768px) {
+   .cartSummary {
+      right: 1.5rem;
+   }
+ }
+

@@ -1,0 +1,65 @@
+.newsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  padding: 0;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .newsTitle {
+    font-size: 3rem;
+  }
+}
+
+.hrHeaderLine {
+  margin: 25px auto 30px;
+  padding: 0;
+  width: 100px;
+  border: 0;
+  border-top: solid 6px;
+  border-color: #f08840;
+  opacity: 1;
+}
+
+.tt {
+    background-size: cover;
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  background-image:
+    linear-gradient(to bottom, rgb(0,0,0,0) 80%,rgba(0,0,0,0.6)),
+    url(../../../public/images/text2.jpg);
+}
+
+.leftdownTitle {
+  margin: 1.8rem 0 0 1.8rem;
+}
+
+.rightimg {
+  width: 6rem;
+  height: 4rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.rightwords {
+  color: white;
+}
+
+.button {
+  width: 6rem;
+  height: 2rem;
+  font-size: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
