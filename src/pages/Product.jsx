@@ -18,7 +18,7 @@ function Product() {
    return (
       <div className="mainLayout">
          <Helmet>
-            <title>music</title>
+            <title>product</title>
             <style>{`
                body { 
                   background-color: ${colorBgBase}; 
