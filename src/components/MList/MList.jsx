@@ -103,7 +103,7 @@ export default function MList() {
             <a href="#"><img src={item.image} style={{ width: '50px', height: '60px' }} /></a>
             </div>
             <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex', flexDirection: 'column' ,textAlign: "center"}}>
-              <a href="https://ant.design" style={{ color: 'rgb(244, 144, 61)' }}>{item.title}</a>
+              <p style={{ color: 'rgb(244, 144, 61)' }}>{item.title}</p>
               <p>{item.name}</p>
             </div>
             <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ textAlign: "center"}}>
