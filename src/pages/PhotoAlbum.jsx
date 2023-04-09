@@ -3,15 +3,25 @@ import { Carousel, theme } from 'antd';
 import { Helmet } from "react-helmet-async"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import MusicList from "../components/MusicList";
+import MList from '../components/MList/MList';
 import products from "../json/products.json";
 import Carouseldemo from '../components/Carousel';
 import VideoList from '../components/VideoList';
 import Person from '../components/Person'
-
+import React, { useState, useEffect } from "react";
+import Loading from '../components/Loading/Loading';
 
 
 function PhotoAlbum() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate data loading
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
   const {
     token: { colorBgBase, colorTextBase },
   } = theme.useToken();
@@ -27,6 +37,10 @@ function PhotoAlbum() {
     : _products[0]?.category;
 
   return (
+      <div>
+        {isLoading ? (
+          <Loading />
+        ) : (
     <div className="mainLayout">
       <Helmet>
         <title>{title}</title>
@@ -45,13 +59,13 @@ function PhotoAlbum() {
       <Carouseldemo/>
       <VideoList/>
       <Person/>
-      <div className="layoutCOntent container">
-        <MusicList products={_products} />
-      </div>
+      <MList/>
       
       <Footer className="layoutFooter" />
     </div>
-  );
+ )}
+ </div>
+);
 }
 
 export default PhotoAlbum;
