@@ -1,23 +1,44 @@
 import { useParams } from 'react-router-dom';
 import { Carousel, theme } from 'antd';
-import { Helmet } from "react-helmet-async";
-import Login from "../components/Login";
+import products from "../json/products.json";
+import Login from "../components/Login/Login";
+import React, { useState, useEffect } from "react";
+import Loading from '../components/Loading/Loading';
 
+function LOGIN(props) {
+    const [isLoading, setIsLoading] = useState(true);
 
-function Login(props) {
-    const { redirect } = QueryString.parse(props.location.search);
-    const [isNavBarVisible, setIsNavBarVisible] = useState(true);
-    return (
-      <Layout className="container main-layout">
-          <div className="login-main-area">
-              <div className="Login">
-                  <LoginCard redirect={redirect}/>
-              </div>
-          </div>
-        
-      </Layout>
+  useEffect(() => {
+    // Simulate data loading
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  const {
+    token: { colorBgBase, colorTextBase },
+  } = theme.useToken();
+  const { categoryName } = useParams();
+  const _products = !categoryName
+    ? products
+    : products.filter(
+      x => x?.category.toUpperCase() === categoryName.toUpperCase()
     );
-  }
+
+  const title = !categoryName
+    ? "NORDIC NEST Shopping Cart"
+    : _products[0]?.category;
+
+    return (
+        <div>
+        {isLoading ? (
+          <Loading />
+        ) : (
+            <Login />
+            )}
+            </div>
+      );
+    }
   
-  export default Login;
+  export default LOGIN;
   
