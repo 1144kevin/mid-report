@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Row, Col, Select } from "antd";
+// import { Row, Col, Select } from "antd";
 import AddToBasket from "../AddToBasket"
 import styles from "./productdetail.module.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
