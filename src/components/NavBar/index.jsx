@@ -10,7 +10,7 @@ export default function NavBar({ open, onClose }) {
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 <img className={styles.logo} src="/images/logo.png" alt="user" />
             </NavLink>
-            <NavLink to="/"
+            <NavLink to="/login"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 登入
             </NavLink>
