@@ -7,8 +7,10 @@ import './multivideo.css';
 export default function MultiVideo(props) {
   return (
     <div className={styles.center}>
-      <div className="container">
-        <Carousel interval={null}>
+      <div className="container" style={{ paddingLeft: "0", paddingRight: "0", paddingTop: "1rem", backgroundColor: "black" }}>
+        <div class="row">
+          <div class="col">
+          <Carousel interval={null}>
           <Carousel.Item>
             <div className="row">
               <div className="col-lg-3 col-md-6">
@@ -127,6 +129,10 @@ export default function MultiVideo(props) {
 
           </Carousel.Item>
         </Carousel>
+
+          </div>
+        </div>
+        
 
       </div>
     </div>

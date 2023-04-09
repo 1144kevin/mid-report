@@ -8,7 +8,7 @@ export default function Header() {
     const [isOnTouch, setIsOnTouch] = useState(false);
 
     return (
-        <div className="container1">
+        <div className="container1" style={{backgroundColor:"#000000"}}>
             <div className={styles.header}>
                 <NavBar open={isOnTouch} onClose={() => setIsOnTouch(false)} /> 
                 <div className={styles.wrap}>

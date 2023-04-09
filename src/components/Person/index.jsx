@@ -39,8 +39,8 @@ export default function Person() {
     return (
         
         <div class="container-fluid" style={{ paddingLeft: "0", paddingRight: "0", backgroundColor: "black", }}>
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row" style={{marginRight:"0"}}>
+                <div class="col-lg-12" style={{marginRight:"0"}}>
                     <h1 className={styles.headerTitle}>
                         Actor
                     </h1>

@@ -3,12 +3,12 @@ import styles from './newnews.module.css';
 import Link from "../Link";
 import { news } from "./news"
 
-export default function Newnews(props) {
+export default function Newnews() {
 
     return (
         <div className={`container-fluid ${styles.tt}`} style={{ paddingLeft: "0", paddingRight: "0" }}>
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row"  style={{marginRight:"0"}}>
+                <div class="col-lg-12" style={{ paddingLeft: "0", paddingRight: "0" }}>
                     <Link to="/">
                         <h1 className={styles.newsTitle}>
                             Breaking News
@@ -17,7 +17,7 @@ export default function Newnews(props) {
                     <hr className={styles.hrHeaderLine} />
                 </div>
             </div>
-            <div class="row" style={{ display: "flex", justifyContent: "center" }}>
+            <div class="row" style={{ display: "flex", justifyContent: "center" ,marginRight:"0"}}>
                 <div class="col-lg-5" style={{ marginBottom: "3rem" }}>
                     <div class="row" style={{ padding: "0.5rem 0" }}>
                         <div class="col-lg-12">

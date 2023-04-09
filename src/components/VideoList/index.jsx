@@ -68,7 +68,7 @@ export default function VideoList() {
     ));
     return (
         <div class="container-fluid" style={{ paddingLeft: "0", paddingRight: "0", paddingTop: "1rem", backgroundColor: "black" }}>
-            <div class="row">
+            <div class="row" style={{marginRight:"0"}}>
                 <div class="col-lg-12">
                     <div className={styles.smalltitle}>
                         <h3>歐美熱播</h3>
@@ -76,7 +76,7 @@ export default function VideoList() {
                 </div>
                 {video1}
             </div>
-            <div class="row">
+            <div class="row"  style={{marginRight:"0"}}>
                 <div class="col-lg-12">
                     <div className={styles.smalltitle}>
                         <h3>韓日熱播</h3>
@@ -84,7 +84,7 @@ export default function VideoList() {
                 </div>
                 {video2}
             </div>
-            <div class="row">
+            <div class="row"  style={{marginRight:"0"}}>
                 <div class="col-lg-12">
                     <div className={styles.smalltitle}>
                         <h3>焦點電影</h3>
