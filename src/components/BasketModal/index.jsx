@@ -87,7 +87,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
             <HeartFilled
                style={{ fontSize: "20px", color: "white" }}
             />
-            <span style={{ marginLeft: 5 }}>save</span>
+            <span style={{ marginLeft: 5 ,fontFamily: "SNsanafonmaru"}}>save</span>
          </Button>
       </Modal>
    );

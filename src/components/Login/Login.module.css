@@ -5,14 +5,15 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: top center;}
-
+	background-position: top center;
+    font-family: 'SNsanafonmaru';
+}
 .contact .form {
 	max-width: 500px;
 	margin:0 auto;
 	padding: 0 30px;
 	color:rgb(255, 172, 130);
-    font-family:'KurewaGothicCjkTc-Bold';
+    font-family: 'SNsanafonmaru';
 }
 .form input {
 	height: 40px;
@@ -25,7 +26,7 @@
 	color:rgb(255, 172, 130);
 	margin:7.5px 0;
     box-shadow:2px 2px 4px rgb(10, 35, 97);
-    font-family:'KurewaGothicCjkTc-Bold';
+    font-family: 'SNsanafonmaru';
 }
 input[type=submit] {
   background-color:rgb(10, 35, 97);
@@ -63,13 +64,13 @@ input[type=submit]:hover {
 .title3{
     margin-bottom: 0px;
     color:rgb(10, 35, 97);
-    font-family:'KurewaGothicCjkTc-Bold';
+    font-family: 'SNsanafonmaru';
     text-align: left;
 }
 .title4{
     margin-bottom: 0px;
     color:rgb(10, 35, 97);
-    font-family:'KurewaGothicCjkTc-Bold';
+    font-family: 'SNsanafonmaru';
     text-align: left;
 }
 .enter{
@@ -116,14 +117,14 @@ input[type=submit]:hover {
     color: rgb(255, 172, 130);
 }
 .dont{
-    font-family:'KurewaGothicCjkTc-Bold';
+    font-family: 'SNsanafonmaru';
     color: rgb(10, 35, 97);
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
 }
 .Sign{
-    font-family:'KurewaGothicCjkTc-Bold';
+    font-family: 'SNsanafonmaru';
     color: rgb(10, 35, 97);
     text-align: center;
 }
@@ -135,7 +136,7 @@ input[type=submit]:hover {
   color: rgb(10, 35, 97);
     cursor: pointer;
     font-size: 48px;
-    font-family:'KurewaGothicCjkTc-Bold';
+    font-family: 'SNsanafonmaru';
     text-align: center;
 }
 .back{

@@ -5,7 +5,6 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ProductDetail from "../components/ProductDetail";
 import products from "../json/products.json";
-import videos from "../json/videos.json"
 
 function Product() {
    const {
@@ -32,7 +31,7 @@ function Product() {
             title="Product Detail"
             slogan="An example made by Vite."
          />
-            <ProductDetail product={product} />
+            <ProductDetail product={product}/>
          <Footer className="layoutFooter" />
       </div>
    );

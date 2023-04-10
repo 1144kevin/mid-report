@@ -7,6 +7,7 @@ import './App.css';
 import Home from './pages/Home'
 import LOGIN from './pages/LOGIN'
 import Product from './pages/Product';
+import Video from './pages/Product';
 import PhotoAlbum from './pages/PhotoAlbum';
 import { darkTheme, lightTheme } from './theme';
 import store from './redux/store';
@@ -21,9 +22,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/photoalbum" element={<PhotoAlbum />} />
               <Route path="/login" element={<LOGIN />} />
-              <Route path="products">
-                <Route path="category/:categoryName" element={<Home />} />
+              <Route path="video">
                 <Route path="id/:productId" element={<Product />} />
+                <Route path="id/:videoId" element={<Video />} />
               </Route>
             </Routes>
           </BrowserRouter>

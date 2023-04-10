@@ -16,7 +16,7 @@ export default function ProductList({ products }) {
           <hr className={styles.hrHeaderLine} />
         </div>
       </div>
-      <Row gutter={[64, 32]} >
+      <Row gutter={[64, 32]} style={{justifyContent:"center"}}>
         {products.map(product => (
           <Col
             style={{ display: "flex", justifyContent: "center",alignItems:"center"}}

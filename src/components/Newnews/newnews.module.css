@@ -7,6 +7,7 @@
   font-size: 1.5rem;
   padding: 0;
   color: white;
+  font-family: 'SNsanafonmaru';
 }
 
 @media (min-width: 768px) {
@@ -31,12 +32,13 @@
     background-repeat: no-repeat;
     background-origin: border-box;
   background-image:
-    linear-gradient(to bottom, rgb(0,0,0,0) 80%,rgba(0,0,0,0.6)),
+    linear-gradient(to bottom, rgb(0,0,0,0) 80%,rgba(0,0,0,1)),
     url(../../../public/images/text2.jpg);
 }
 
 .leftdownTitle {
   margin: 1.8rem 0 0 1.8rem;
+  font-family: 'SNsanafonmaru';
 }
 
 .rightimg {
@@ -48,6 +50,7 @@
 
 .rightwords {
   color: white;
+  font-family: 'SNsanafonmaru';
 }
 
 .button {
@@ -57,6 +60,7 @@
   border: none;
   background-color: black;
   color: white;
+  font-family: 'SNsanafonmaru';
 }
 
 .button:hover {

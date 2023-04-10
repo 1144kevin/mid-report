@@ -92,7 +92,11 @@ export default function MList() {
 
   return (
     <Row>
+      <Row
+      style={{width:"100%",display:"flex",justifyContent:"center",alignItems:"center"}}
+      >
       <Col
+        style={{width:"100%",display:"flex",justifyContent:"center",alignItems:"center"}}
         sm={{ span: 24 }}
         lg={{ span: 24 }}
         xl={{ span: 24 }}
@@ -105,6 +109,7 @@ export default function MList() {
           <hr className={styles.hrHeaderLine} />
         </div>
       </Col>
+      </Row>
       <Col
         style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
         sm={{ span: 24 }}
@@ -122,11 +127,11 @@ export default function MList() {
               <List.Item>
                 <div className={styles.b}>
                 </div>
-                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex', justifyContent: "center" }}>
+                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex', justifyContent: "center" ,fontFamily: "SNsanafonmaru"}}>
                   <h3>{item.number}</h3>
                   <a href="#"><img src={item.image} style={{ width: '50px', height: '60px' }} /></a>
                 </div>
-                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex', flexDirection: 'column', textAlign: "center" }}>
+                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex', flexDirection: 'column', textAlign: "center" ,fontFamily: "SNsanafonmaru"}}>
                   <p style={{ color: 'rgb(244, 144, 61)' }}>{item.title}</p>
                   <p>{item.name}</p>
                 </div>

@@ -1,6 +1,6 @@
 [
   {
-    "number": "1.",
+    "id": "1",
     "image": "../images/鬼怪M.jpg",
     "title": "Stay With Me(CHANYEOL,PUNCH)",
     "name": "鬼怪",
@@ -8,7 +8,7 @@
     "song": "/Media/staywithme.mp3"
   },
   {
-    "number": "2.",
+    "id": "2",
     "image": "../images/太陽的後裔M.jpg",
     "title": "Everytime(CHEN,PUNCH)",
     "name": "太陽的後裔",
@@ -16,7 +16,7 @@
     "song": "/Media/everytime.mp3"
   },
   {
-    "number": "3.",
+    "id": "3",
     "image": "../images/梨泰院M.png",
     "title": "Beginning(Gaho)",
     "name": "梨泰院class",
@@ -24,7 +24,7 @@
     "song": "/Media/CLASS.mp3"
   },
   {
-    "number": "4.",
+    "id": "4",
     "image": "../images/花郎M.jpg",
     "title": "Its Definitely You(V,JIN)",
     "name": "花郎",
@@ -32,7 +32,7 @@
     "song": "/Media/It's Definitely You.mp3"
   },
   {
-    "number": "5.",
+    "id": "5",
     "image": "../images/太陽的後裔M.jpg",
     "title": "ALWAYS(尹美萊)",
     "name": "太陽的後裔",
@@ -40,7 +40,7 @@
     "song": "/Media/ALWAYS.mp3"
   },
   {
-    "number": "6.",
+    "id": "6",
     "image": "../images/來自星星的你M.jpg",
     "title": "My Destiny(LYn)",
     "name": "來自星星的你",
@@ -48,7 +48,7 @@
     "song": "/Media/My Destiny.mp3"
   },
   {
-    "number": "7.",
+    "id": "7",
     "image": "../images/社內相親M.jpg",
     "title": "Love, Maybe(MeloMance)",
     "name": "社內相親",
@@ -56,7 +56,7 @@
     "song": "/Media/Love Maybe.mp3"
   },
   {
-    "number": "8.",
+    "id": "8",
     "image": "../images/雪降花M.jpg",
     "title": "Friend(Kim Hee Won)",
     "name": "雪降花",
@@ -64,7 +64,7 @@
     "song": "/Media/Friend.mp3"
   },
   {
-    "number": "9.",
+    "id": "9",
     "image": "../images/初戀M.jpg",
     "title": "First love(宇多田ヒカル)",
     "name": "初恋",
@@ -72,7 +72,7 @@
     "song": "/Media/First Love.mp3"
   },
   {
-    "number": "10.",
+    "id": "10",
     "image": "../images/主軍的太陽M.webp",
     "title": "Touch Love(尹美萊)",
     "name": "主君的太陽",

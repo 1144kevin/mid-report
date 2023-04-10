@@ -5,7 +5,7 @@
    background-repeat: no-repeat;
    background-origin: border-box;
  background-image:
-   linear-gradient(to bottom, rgb(0,0,0,0.4) 60%,rgba(255,255,255,1)95%),
+   linear-gradient(to bottom, rgb(0,0,0,0.4) 60%,rgba(255,255,255,1)100%),
    url(../../../public/images/bgtest1.jpg);
 }
 .image {
@@ -23,6 +23,7 @@
    align-items: center;
    padding:0 1.2rem;
    padding-bottom: 13rem;
+   font-family: 'SNsanafonmaru';
 }
 
 .category {
@@ -32,6 +33,7 @@
    margin-top: 2rem;
    margin-bottom:1rem;
    color: white;
+   font-family: 'SNsanafonmaru';
 }
 
 .name {
@@ -58,6 +60,7 @@
    overflow: hidden;
    overflow-y: scroll;
    border-left: 1px #d0d0d0 solid;
+   font-family: 'SNsanafonmaru';
 }
 ::-webkit-scrollbar{
    width: 0.5rem;
@@ -78,4 +81,5 @@
    width: 100%;
    height: 3rem;
    color: white;
+   font-family: 'SNsanafonmaru';
 }

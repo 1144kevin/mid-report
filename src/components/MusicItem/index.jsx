@@ -6,7 +6,7 @@ export default function MusicItem({ product }) {
 
    return (
       <div className={styles.item}>
-         <Link to={`/products/id/${product.id}`}>
+         <Link to={`video/id/${product.id}`}>
             <img
                style={{ width: "20rem", height: "13rem" }}
                src={product.image}
