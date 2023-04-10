@@ -7,7 +7,10 @@ import styles from "./basketmodal.module.css"
 import { CartIcon } from "./Icons";
 import { selectCartItems } from "../../redux/cartSlice";
 import { HeartFilled } from '@ant-design/icons';
+<<<<<<< HEAD
 import { DeleteOutlined } from '@ant-design/icons';
+=======
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
 const { Option } = Select;
 
 export default function BasketModal({ isOpen, toggleModal }) {
@@ -15,6 +18,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
    const cartItems = useSelector(selectCartItems);
 
    const handleCancel = () => toggleModal(!isOpen);
+<<<<<<< HEAD
    // const getTotalPrice = () => {
    //    return (cartItems.length > 0) ?
    //       cartItems.reduce((sum, item) => sum + item.price * item.qty, 0)
@@ -23,6 +27,13 @@ export default function BasketModal({ isOpen, toggleModal }) {
    const qty = (cartItems.length > 0)
       ? cartItems.reduce((sum, item) => sum + item.qty, 0)
       : 0;
+=======
+   const getTotalPrice = () => {
+      return (cartItems.length > 0) ?
+         cartItems.reduce((sum, item) => sum + item.price * item.qty, 0)
+         : 0;
+   }
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
 
    return (
       <Modal
@@ -43,7 +54,11 @@ export default function BasketModal({ isOpen, toggleModal }) {
                   </Link>
                   <div className={styles.content}>
                      <div className={styles.name}>{item.name}</div>
+<<<<<<< HEAD
                      {/* <div>
+=======
+                     <div>
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
                         Qty: {"   "}
                         <Select
                            defaultValue={item.qty}
@@ -62,6 +77,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                               </Option>
                            ))}
                         </Select>
+<<<<<<< HEAD
                      </div> */}
                   </div>
                   <div>
@@ -71,6 +87,16 @@ export default function BasketModal({ isOpen, toggleModal }) {
                      <div className={styles.delete} onClick={() => dispatch(removeCartItems(item.id))}>
                      <DeleteOutlined 
                      style={{ fontSize: "15px", color: "black" }}/>
+=======
+                     </div>
+                  </div>
+                  <div>
+                     <div className={styles.price}>
+                        ${item.price * item.qty}
+                     </div>
+                     <div className={styles.delete} onClick={() => dispatch(removeCartItems(item.id))}>
+                        x
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
                      </div>
                   </div>
                </li>
@@ -78,15 +104,25 @@ export default function BasketModal({ isOpen, toggleModal }) {
          )}
          <div className={styles.wrap}>
             Total
+<<<<<<< HEAD
             <div className={styles.totalPrice}>{qty}</div>
+=======
+            <div className={styles.totalPrice}>${getTotalPrice()}</div>
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
          </div>
          <Button
             className={styles.btn}
             type="primary"
          >
+<<<<<<< HEAD
             <HeartFilled
                style={{ fontSize: "20px", color: "white" }}
             />
+=======
+           <HeartFilled 
+          style={{fontSize:"20px",color:"white"}}
+          />
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
             <span style={{ marginLeft: 5 }}>save</span>
          </Button>
       </Modal>

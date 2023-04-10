@@ -2,7 +2,10 @@
     margin-top: 100px; 
 }
 .element{
+<<<<<<< HEAD
     width: 80%;
+=======
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
     margin-right: 10px;
     max-height: 430px;
     overflow-y: auto;
@@ -24,6 +27,7 @@
     border-radius: 0;
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
     background: rgba(0,0,0,0.1);
+<<<<<<< HEAD
 }
 .titlebox{
     width: 100%;
@@ -56,3 +60,6 @@
       border-color: #f08840;
       opacity: 1;
     }
+=======
+}
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957

@@ -1049,7 +1049,11 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
+<<<<<<< HEAD
 license@:
+=======
+license@MIT:
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/license/-/license-1.0.3.tgz#5c0085eff650bbd9f453a1cdd9206aa1ffb6a538"
   integrity sha512-M3F6dUcor+vy4znXK5ULfTikeMWxSf/K2w7EUk5vbuZL4UAEN4zOmjh7d2UJ0/v9GYTOz13LNsLqPXJGu+A26w==

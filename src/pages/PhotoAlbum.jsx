@@ -6,10 +6,17 @@ import Footer from "../components/Footer"
 import MList from '../components/MList/MList';
 import products from "../json/products.json";
 import Carouseldemo from '../components/Carousel';
+<<<<<<< HEAD
 import VideoList from '../components/VideoList';
 import Person from '../components/Person'
 import React, { useState, useEffect } from "react";
 import Loading from '../components/Loading/Loading';
+=======
+import Person from '../components/Person'
+import React, { useState, useEffect } from "react";
+import Loading from '../components/Loading/Loading';
+import VideoList2 from '../components/VideoList2';
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
 
 
 function PhotoAlbum() {
@@ -57,7 +64,11 @@ function PhotoAlbum() {
         slogan="An example made by Vite."
       />
       <Carouseldemo/>
+<<<<<<< HEAD
       <VideoList/>
+=======
+      <VideoList2/>
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
       <Person/>
       <MList/>
       

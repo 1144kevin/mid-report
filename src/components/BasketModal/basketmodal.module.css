@@ -46,6 +46,7 @@
 
 .delete {
   font-size: 1.2rem;
+<<<<<<< HEAD
   opacity: 0.8;
   text-align: right;
   cursor: pointer;
@@ -53,6 +54,12 @@
 .delete:hover{
   transform: scale(1.5);
 }
+=======
+  opacity: 0.6;
+  text-align: right;
+  cursor: pointer;
+}
+>>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
 
 .wrap {
   display: flex;
