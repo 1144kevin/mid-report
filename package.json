@@ -12,11 +12,7 @@
     "@reduxjs/toolkit": "^1.9.1",
     "antd": "^5.1.5",
     "bootstrap": "^5.2.3",
-<<<<<<< HEAD
-    "license": "",
-=======
     "license": "MIT",
->>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",

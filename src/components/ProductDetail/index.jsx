@@ -22,7 +22,7 @@ function ProductDetail({ product }) {
                   src={product.image}
                />
             </div>
-            <div class="col-lg-4" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+            <div class="col-lg-3" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                <div className={styles.title}>
                   <h3>Lyrics</h3>
                </div>

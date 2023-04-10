@@ -57,13 +57,13 @@
    height: 330px;
    overflow: hidden;
    overflow-y: scroll;
-   border-left: 1px gray solid;
+   border-left: 1px #d0d0d0 solid;
 }
 ::-webkit-scrollbar{
    width: 0.5rem;
 }
 ::-webkit-scrollbar-thumb{
-   background-color:white;
+   background-color:#d0d0d0;
    border-radius: 12px;
 }
 .lyric p{
