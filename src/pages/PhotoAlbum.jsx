@@ -33,7 +33,7 @@ function PhotoAlbum() {
     );
 
   const title = !categoryName
-    ? "NORDIC NEST Shopping Cart"
+    ? "Photoalbum"
     : _products[0]?.category;
 
   return (

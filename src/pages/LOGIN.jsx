@@ -26,7 +26,7 @@ function LOGIN(props) {
     );
 
   const title = !categoryName
-    ? "NORDIC NEST Shopping Cart"
+    ? "Login"
     : _products[0]?.category;
 
     return (

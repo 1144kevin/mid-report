@@ -33,7 +33,7 @@ function Home() {
     );
 
   const title = !categoryName
-    ? "NORDIC NEST Shopping Cart"
+    ? "Home"
     : _products[0]?.category;
 
 
