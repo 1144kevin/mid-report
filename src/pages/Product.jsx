@@ -31,13 +31,7 @@ function Product() {
             title="Product Detail"
             slogan="An example made by Vite."
          />
-<<<<<<< HEAD
             <ProductDetail product={product} />
-=======
-         <div className="layoutContent container">
-            <ProductDetail product={product} />
-         </div>
->>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
          <Footer className="layoutFooter" />
       </div>
    );

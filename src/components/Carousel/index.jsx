@@ -33,11 +33,7 @@ function Carouseldemo() {
         <img
           style={{ width: "100%", height: "700px", objectFit: "cover", objectPosition: "center" }}
           className="d-block w-100"
-<<<<<<< HEAD
           src="/images/bannertest3.jpeg"
-=======
-          src="/images/banner3.png"
->>>>>>> bb9a715b64c63ba8888836994e0f04ea48fbc957
           alt="Third slide"
         />
 
