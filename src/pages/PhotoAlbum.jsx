@@ -5,6 +5,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import MList from '../components/MList/MList';
 import products from "../json/products.json";
+import videos2 from "../json/videos2.json"
 import Carouseldemo from '../components/Carousel';
 import VideoList2 from '../components/VideoList2';
 import Person from '../components/Person'
@@ -57,7 +58,7 @@ function PhotoAlbum() {
         slogan="An example made by Vite."
       />
       <Carouseldemo/>
-      <VideoList2/>
+      <VideoList2 videos2={videos2}/>
       <Person/>
       <MList/>
       

@@ -22,18 +22,23 @@ export default function ProductList({ products }) {
           
           </Col>
         </Row>
+        <Row  gutter={[0, 32]}>
         {products.map(product => (
           <Col
             style={{ display: "flex", justifyContent: "center",alignItems:"center"}}
             sm={{ span: 12 }}
             md={{ span: 12 }}
-            lg={{ span: 8 }}
-            xl={{ span: 6 }}
+            lg={{ span: 8  }}
+            xl={{ span: 6  }}
             xxl={{ span: 6 }}
+            
           >
             <MusicItem product={product} />
           </Col>
         ))}
+
+        </Row>
+        
       </Row>
 
   );

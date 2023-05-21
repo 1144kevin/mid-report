@@ -33,30 +33,38 @@
     background-origin: border-box;
   background-image:
     linear-gradient(to bottom, rgb(0,0,0,0) 80%,rgba(0,0,0,1)),
-    url(../../../public/images/text2.jpg);
+    url(../../../public/images/bgtest1.jpg);
 }
-
-.leftdownTitle {
-  margin: 1.8rem 0 0 1.8rem;
-  font-family: 'SNsanafonmaru';
-}
-
-.rightimg {
-  width: 6rem;
-  height: 4rem;
-  object-fit: cover;
-  object-position: center;
-}
-
-.rightwords {
+.word{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4rem;
   color: white;
   font-family: 'SNsanafonmaru';
+  font-weight: 600;
 }
-
+.word p{
+  margin-top: 0.5rem;
+  padding-left: 0.4rem;
+}
+.word h3{
+  cursor: pointer;
+}
+.originalword{
+  color: white;
+  position: absolute;
+  font-size: 1.3rem;
+}
 .button {
-  width: 6rem;
+  width: 8rem;
   height: 2rem;
-  font-size: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: black;
   color: white;

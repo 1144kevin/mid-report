@@ -6,6 +6,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import './App.css';
 import Home from './pages/Home'
 import LOGIN from './pages/LOGIN'
+import Movie from './pages/Moviepage';
 import Product from './pages/Product';
 import PhotoAlbum from './pages/PhotoAlbum';
 import { darkTheme, lightTheme } from './theme';
@@ -16,11 +17,12 @@ function App() {
     <Provider store={store}>
       <ConfigProvider theme={lightTheme} >
         <HelmetProvider context={{}}>
-          <BrowserRouter>
+          <BrowserRouter >
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/photoalbum" element={<PhotoAlbum />} />
               <Route path="/login" element={<LOGIN />} />
+              <Route path="/movie" element={<Movie />} />
               <Route path="music">
                 <Route path="id/:productId" element={<Product />} />
               </Route>

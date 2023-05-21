@@ -3,7 +3,6 @@ import { useState } from "react";
 import AddToBasket from "../AddToBasket"
 import styles from "./productdetail.module.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import {info} from "../../json/products.json"
 // const { Option } = Select;
 
 function ProductDetail({ product }) {

@@ -18,7 +18,7 @@ export default function NavBar({ open, onClose }) {
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 影集
             </NavLink>
-            <NavLink to="/products/category/home-accessories"
+            <NavLink to="/movie"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 電影
             </NavLink>
