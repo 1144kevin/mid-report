@@ -45,17 +45,25 @@
   font-family: 'SNsanafonmaru';
   font-weight: 600;
 }
+.word h5{
+  width: 20rem;
+}
 .word p{
+  font-size: 1rem;
   margin-top: 0.5rem;
   padding-left: 0.4rem;
 }
 .word h3{
   cursor: pointer;
 }
-.originalword{
+.word .originalword{
+  width: auto;
   color: white;
   position: absolute;
-  font-size: 1.3rem;
+  margin-top:2rem ;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  font-size: 1rem;
 }
 .button {
   width: 8rem;
@@ -69,6 +77,7 @@
   background-color: black;
   color: white;
   font-family: 'SNsanafonmaru';
+  transform-origin: left;
 }
 
 .button:hover {
