@@ -11,6 +11,7 @@ import videos21 from "../json/videos2-1.json"
 import videos22 from "../json/videos2-2.json"
 import videos41 from "../json/videos4-1.json"
 import videos42 from "../json/videos4-2.json"
+import music2 from "../json/music2.json"
 import Carouseldemo from '../components/Carousel';
 import VideoList2 from '../components/VideoList2';
 import Person from '../components/Person'
@@ -65,7 +66,7 @@ function PhotoAlbum() {
       <Carouseldemo/>
       <VideoList2 videos11={videos11} videos12={videos12} videos21={videos21} videos22={videos22} videos41={videos41} videos42={videos42}/>
       <Person/>
-      <MList/>
+      <MList music2={music2} />
       
       <Footer className="layoutFooter" />
     </div>

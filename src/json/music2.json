@@ -1,0 +1,83 @@
+[
+    {
+    "id":"1",
+      "number": "1.",
+      "image": "/images/鬼怪M.jpg",
+      "name": "Stay With Me(CHANYEOL,PUNCH)",
+      "title": "鬼怪",
+      "song": "/Media/staywithme.mp3"
+    },
+    {
+        "id":"2",
+        "number": "2.",
+        "image": "/images/太陽的後裔M.jpg",
+        "name": "Everytime(CHEN,PUNCH)",
+        "title": "太陽的後裔",
+        "song": "/Media/everytime.mp3"
+      },
+      {
+        "id":"3",
+        "number": "3.",
+        "image": "/images/梨泰院M.png",
+        "name": "Beginning(Gaho)",
+        "title": "梨泰院class",
+        "song": "/Media/CLASS.mp3"
+      },
+      {
+        "id":"4",
+        "number": "4.",
+        "image": "/images/花郎M.jpg",
+        "name": "Its Definitely You(V,JIN)",
+        "title": "花郎",
+        "song": "/Media/It's Definitely You.mp3"
+      },
+      {
+        "id":"5",
+        "number": "5.",
+        "image": "/images/太陽的後裔M.jpg",
+        "name": "ALWAYS(尹美萊)",
+        "title": "太陽的後裔",
+        "song": "/Media/ALWAYS.mp3"
+      },
+      {
+        "id":"6",
+        "number": "6.",
+        "image": "/images/來自星星的你M.jpg",
+        "name": "My Destiny(LYn)",
+        "title": "來自星星的你",
+        "song": "/Media/My Destiny.mp3"
+      },
+      {
+        "id":"7",
+        "number": "7.",
+        "image": "/images/社內相親M.jpg",
+        "name": "Love, Maybe(MeloMance)",
+        "title": "社內相親",
+        "song": "/Media/Love Maybe.mp3"
+      },
+      {
+        "id":"8",
+        "number": "8.",
+        "image": "/images/雪降花M.jpg",
+        "name": "Friend(Kim Hee Won)",
+        "title": "雪降花",
+        "song": "/Media/Friend.mp3"
+      },
+      {
+        "id":"9",
+        "number": "9.",
+        "image": "/images/初戀M.jpg",
+        "name": "First love(宇多田ヒカル)",
+        "title": "初戀",
+        "song": "/Media/First Love.mp3"
+      },
+      {
+        "id":"10",
+        "number": "10.",
+        "image": "/images/主軍的太陽M.webp",
+        "name": "Touch Love(尹美萊)",
+        "name": "主君的太陽",
+        "song": "/Media/Touch Love.mp3"
+      }
+   
+  ]
