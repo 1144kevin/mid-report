@@ -26,10 +26,11 @@ export default function BasketModal({ isOpen, toggleModal }) {
 
    return (
       <Modal
-         title="我的最愛"
+         title="Favorite"
          open={isOpen}
          onCancel={handleCancel}
          footer={null}
+         style={{}}
       >
          {cartItems.length === 0 ? (
             <div>Your favorite is empty</div>

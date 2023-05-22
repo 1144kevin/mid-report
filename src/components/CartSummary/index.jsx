@@ -23,7 +23,7 @@ export default function CartSummary() {
           style={{fontSize:"30px",color:"#f08840"}}
           />
         </Badge>
-        <p className={styles.cartText}> 我的最愛 </p>
+        <p className={styles.cartText}> Favorite </p>
       </nav>    
       <BasketModal
         isOpen={isOpen}

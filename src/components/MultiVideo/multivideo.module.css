@@ -9,34 +9,20 @@
   font-family: 'SNsanafonmaru';
 }
 
-.button {
-  width: 4rem;
-  height: 2rem;
-  font-size: 10px;
-  border: none;
-  background-color: black;
-  margin: 0 0 0 1rem;
-}
-
-.button:hover {
-  background-color: white;
-  color: black;
-}
-
-.videos {
+.pic {
   position: relative;
   width: 100%;
   height: 200px;
 }
 
-.videos img {
+.pic img {
   display: block;
   width: 100%;
   height: 95%;
   object-fit: cover;
 }
 
-.videos .info {
+.pic .info {
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -62,17 +48,3 @@
   margin: 0 0 0 1rem;
 }
 
-.smalltitle {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  height: 3rem;
-  color: white;
-  background-color: black;
-  font-family: 'SNsanafonmaru';
-}
-
-.smalltitle h3 {
-  margin: 0 1rem;
-}

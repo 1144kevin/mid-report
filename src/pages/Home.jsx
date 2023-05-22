@@ -5,7 +5,12 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import MusicList from "../components/MusicList";
 import products from "../json/products.json";
-import videos from "../json/videos.json"
+import videos11 from "../json/videos1-1.json"
+import videos12 from "../json/videos1-2.json"
+import videos21 from "../json/videos2-1.json"
+import videos22 from "../json/videos2-2.json"
+import videos31 from "../json/videos3-1.json"
+import videos32 from "../json/videos3-2.json"
 import Carouseldemo from '../components/Carousel';
 import VideoList from '../components/VideoList';
 import Newnews from '../components/Newnews';
@@ -60,7 +65,7 @@ function Home() {
           />
           <Carouseldemo />
           <Newnews />
-          <VideoList videos={videos} />
+          <VideoList videos11={videos11} videos12={videos12} videos21={videos21} videos22={videos22} videos31={videos31} videos32={videos32}/>
           <div className="layoutCOntent container">
             <MusicList products={_products} />
           </div>
