@@ -5,8 +5,8 @@ import styles from './videolist.module.css';
 export default function VideoList({ videos11,videos12,videos21,videos22,videos31,videos32 }) {
     return (
         <div class="container-fluid" style={{ paddingLeft: "0", paddingRight: "0", paddingTop: "1rem", backgroundColor: "black" }}>
-            <div class="row">
-              <div class="col-lg-12">
+            <div class="row" style={{ marginRight: "0" }}>
+              <div class="col-lg-12" style={{ paddingLeft: "0", paddingRight: "0"  }}>
                 <div className={styles.smalltitle}>
                   <h3>歐美熱播</h3>
                 </div>
@@ -15,8 +15,8 @@ export default function VideoList({ videos11,videos12,videos21,videos22,videos31
             <div class="row" style={{ marginRight: "0" }}>
                     <MultiVideo videos={videos11} videos1={videos12}/>
             </div>
-            <div class="row">
-              <div class="col-lg-12">
+            <div class="row" style={{ marginRight: "0" }}>
+              <div class="col-lg-12" style={{ padding: "0" }}>
                 <div className={styles.smalltitle}>
                   <h3>韓日熱播</h3>
                 </div>
@@ -25,8 +25,8 @@ export default function VideoList({ videos11,videos12,videos21,videos22,videos31
             <div class="row" style={{ marginRight: "0" }}>
                     <MultiVideo videos={videos21} videos1={videos22}/>
             </div>
-            <div class="row">
-              <div class="col-lg-12">
+            <div class="row" style={{ marginRight: "0" }}>
+              <div class="col-lg-12" style={{ padding: "0" }}>
                 <div className={styles.smalltitle}>
                   <h3>熱門電影</h3>
                 </div>

@@ -28,8 +28,9 @@
 }
 
 .image {
-  width: 4rem;
-  height: 4.5rem;
+  width: 6rem;
+  height: auto;
+  max-height: 4rem;
   object-fit: cover;
   object-position:center;
   flex: 1 1;

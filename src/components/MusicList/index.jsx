@@ -22,7 +22,7 @@ export default function ProductList({ products }) {
           
           </Col>
         </Row>
-        <Row  gutter={[0, 32]}>
+        <Row  gutter={[32, 32]}>
         {products.map(product => (
           <Col
             style={{ display: "flex", justifyContent: "center",alignItems:"center"}}

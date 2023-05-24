@@ -1,4 +1,4 @@
-import { Button, notification } from "antd"
+import {notification } from "antd"
 import { useDispatch } from "react-redux";
 import { addCartItems } from "../../redux/cartSlice";
 import styles from "./addtobasket.module.css"
@@ -11,7 +11,7 @@ export default function AddToCart({ product, qty }) {
     notification.open({
       message: 'Adding Notification',
       description:
-        ` ${product.name} has been added to your favorite.`,
+        ` ${product.category}<${product.name}> has been added to your favorite.`,
       placement: 'bottomRight'
     });
   };
@@ -23,14 +23,15 @@ export default function AddToCart({ product, qty }) {
       name: product.name,
       image: product.image,
       price: product.price,
+      category:product.category,
       countInStock: product.countInStock,
       qty,
     }))
   };
 
   return (
-    <Button type="primary" color="#000000" className={styles.btn} onClick={addToCart}>
+    <button className={styles.btn} onClick={addToCart}>
       <h6>ADD</h6>
-    </Button>
+    </button>
   );
 }

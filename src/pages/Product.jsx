@@ -1,10 +1,11 @@
-import { useParams } from 'react-router-dom';
+import { useMatch, useParams } from 'react-router-dom';
 import { theme } from 'antd';
 import { Helmet } from "react-helmet-async"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ProductDetail from "../components/ProductDetail";
 import products from "../json/products.json";
+import music2 from "../json/music2.json";
 
 function Product() {
    const {
@@ -12,7 +13,11 @@ function Product() {
    } = theme.useToken();
    const { productId } = useParams();
    const product = products.find(
-      (x) => x.id === productId
+      (y) => y.id === productId
+   );
+   const { musicId } = useParams();
+   const music = music2.find(
+       (x) => x.id === musicId
    );
 
    return (
@@ -31,7 +36,11 @@ function Product() {
             title="Product Detail"
             slogan="An example made by Vite."
          />
-            <ProductDetail product={product}/>
+
+         {
+            productId==null  ? ( <ProductDetail music={music}/>):(<ProductDetail music={product}/>)
+         }
+           
          <Footer className="layoutFooter" />
       </div>
    );

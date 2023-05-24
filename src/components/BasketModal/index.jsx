@@ -43,6 +43,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                      </div>
                   </Link>
                   <div className={styles.content}>
+                     <div className={styles.name}>{item.category}</div>
                      <div className={styles.name}>{item.name}</div>
                      {/* <div>
                         Qty: {"   "}

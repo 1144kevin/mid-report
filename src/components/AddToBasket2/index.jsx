@@ -11,7 +11,7 @@ export default function AddToCart({ product, qty }) {
     notification.open({
       message: 'Adding Notification',
       description:
-        ` ${product.name} has been added to your favorite.`,
+        ` ${product.category}<${product.name}> has been added to your favorite.`,
       placement: 'bottomRight'
     });
   };
@@ -23,6 +23,7 @@ export default function AddToCart({ product, qty }) {
       name: product.name,
       image: product.image,
       price: product.price,
+      category:product.category,
       countInStock: product.countInStock,
       qty,
     }))

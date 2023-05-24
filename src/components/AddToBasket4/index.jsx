@@ -11,7 +11,7 @@ export default function AddToCart({ music, qty }) {
     notification.open({
       message: 'Adding Notification',
       description:
-        ` ${music.name} has been added to your favorite.`,
+        ` ${music.category}<${music.name}> has been added to your favorite.`,
       placement: 'bottomRight'
     });
   };
@@ -21,10 +21,10 @@ export default function AddToCart({ music, qty }) {
     dispatch(addCartItems({
       id: music.id,
       number:music.number,
-      title:music.title,
+      category:music.category,
       name: music.name,
       image: music.image,
-      song:music.song,
+      audio:music.audio,
       qty,
     }))
   };
