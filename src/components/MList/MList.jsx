@@ -9,7 +9,7 @@ import AddToBasket4 from "../AddToBasket4";
 export default function MList({ music2 }) {
   const [loading, setLoading] = useState(false);
   return (
-    <Row>
+    <Row style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
       <Row
         style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}
       >
@@ -37,30 +37,34 @@ export default function MList({ music2 }) {
 
       >
         <div className={styles.element}>
-          <List itemLayout="horizontal"
+          <List
+            class="container"
+            itemLayout="horizotal"
             loading={loading}>
+           
             {music2.map(music => (
               <List.Item>
-                <div className={styles.b}>
-                </div>
-                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex', justifyContent: "center", fontFamily: "SNsanafonmaru" }}>
-                  <h3>{music.number}</h3>
+                <div class="row" style={{minHeight:"6rem", display: 'flex', justifyContent: "center",alignItems:"center"}}>
+                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex',justifyContent:"center",alignItems:"center" ,fontFamily: "SNsanafonmaru" }}>
+                  <h3 style={{marginRight:"1rem"}}>{music.number}</h3>
                   <Link to={`music/id/${music.id}`}>
-                  <img src={music.image} style={{ width: '50px', height: '60px' }} />
+                    <img src={music.image} style={{ width: '50px', height: '60px', objectFit: "cover", objectPosition: "center" }} />
                   </Link>
                 </div>
-                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex', flexDirection: 'column', textAlign: "center", fontFamily: "SNsanafonmaru" }}>
-                  <p style={{ color: 'rgb(244, 144, 61)' }}>{music.name}</p>
-                  <p>{music.category}</p>
+                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex',justifyContent:"center",alignItems:"center" ,flexDirection: 'column', textAlign: "center", fontFamily: "SNsanafonmaru" }}>
+                  <p style={{ color: 'rgb(244, 144, 61)',margin:"0" }}>{music.name}</p>
+                  <p style={{ margin:"0" }}>{music.category}</p>
                 </div>
-                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ textAlign: "center" }}>
-                  <audio controls style={{ width: "270px", height: "40px" }}>
+                <div className="col-xs-3 col-md-3 col-lg-4 bag4" style={{ textAlign: "center" }}>
+                  <audio controls style={{ width: "85%", height: "2rem" }}>
                     <source src={music.audio} type="audio/mpeg" />
                   </audio>
                 </div>
-                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ textAlign: "center" }}>
+                <div className="col-xs-3 col-md-3 col-lg-2 bag4" style={{ textAlign: "center" }}>
                   <AddToBasket4 music={music} qty={1} />
                 </div>
+                </div>
+                
               </List.Item>
 
             ))}

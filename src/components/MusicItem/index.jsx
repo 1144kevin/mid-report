@@ -24,7 +24,7 @@ export default function MusicItem({ product }) {
                {product.name}
             </h6>
 
-            <audio controls style={{ width: "270px", height: "30px" }}>
+            <audio controls style={{ width: "100%", height: "2rem" }}>
                <source src={product.audio} type="audio/mpeg" />
             </audio>
             <div className={styles.lyric} style={{ display: "none" }}>

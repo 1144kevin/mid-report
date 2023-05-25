@@ -13,6 +13,8 @@ import videos41 from "../json/videos4-1.json"
 import videos42 from "../json/videos4-2.json"
 import music2 from "../json/music2.json"
 import Carouseldemo from '../components/Carousel';
+import Scrolltrigger from '../components/Scrolltrigger';
+import banners from "../json/banner.json"
 import VideoList2 from '../components/VideoList2';
 import Person from '../components/Person'
 import React, { useState, useEffect } from "react";
@@ -63,7 +65,7 @@ function PhotoAlbum() {
         title={title}
         slogan="An example made by Vite."
       />
-      <Carouseldemo/>
+      <Scrolltrigger banners={banners}/>
       <VideoList2 videos11={videos11} videos12={videos12} videos21={videos21} videos22={videos22} videos41={videos41} videos42={videos42}/>
       <Person/>
       <MList music2={music2} />

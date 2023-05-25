@@ -1,6 +1,6 @@
 /* Cart */
 .btn {
-  width: 60%;
+  width: 100%;
   font-size: 1rem;
   font-weight:900;
   padding: 0.7rem;
@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   background-color: #f08840;
-  margin-left: 6rem;
 }
 .btn:hover{
   opacity: 0.8;

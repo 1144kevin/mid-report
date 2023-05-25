@@ -47,9 +47,9 @@ export default function Person() {
                     <hr className={styles.hrHeaderLine} />
                 </div>
             </div>
-            <div className={styles.carousel}>
+            <div className={styles.carousel} >
       
-                <Slider {...settings}>
+                <Slider {...settings} >
                     <div className={styles.box}>
                         <img
                             className={styles.img}

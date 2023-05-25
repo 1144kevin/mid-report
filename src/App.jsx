@@ -1,5 +1,5 @@
 import 'antd/dist/reset.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route,Router } from 'react-router-dom'
 import { ConfigProvider } from 'antd';
 import { Provider } from "react-redux";
 import { HelmetProvider } from 'react-helmet-async'
@@ -11,8 +11,10 @@ import Product from './pages/Product';
 import PhotoAlbum from './pages/PhotoAlbum';
 import { darkTheme, lightTheme } from './theme';
 import store from './redux/store';
+import { useEffect } from 'react';
 
 function App() {
+
   return (
     <Provider store={store}>
       <ConfigProvider theme={lightTheme} >
@@ -26,7 +28,7 @@ function App() {
               <Route path="/photoalbum/music">
                 <Route path="id/:musicId" element={<Product />} />
               </Route>
-              <Route path="/music">
+              <Route path="/music" >
                 <Route path="id/:productId" element={<Product />} />
               </Route>
             </Routes>

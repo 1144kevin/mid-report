@@ -29,7 +29,7 @@ export default function AddToCart({ video, qty }) {
 
   return (
     <Button className={styles.btn} onClick={addToCart}>
-      <p>ADD</p>
+      <h6>新增</h6>
     </Button>
   );
 }

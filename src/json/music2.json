@@ -88,7 +88,7 @@
     {
         "id": "3",
         "number": "3.",
-        "image": "/images/梨泰院M.png",
+        "image": "/images/梨泰院M.jpg",
         "name": "Beginning(Gaho)",
         "category": "梨泰院class",
         "audio": "/Media/CLASS.mp3",
@@ -174,7 +174,7 @@
     {
         "id": "5",
         "number": "5.",
-        "image": "/images/太陽的後裔M.jpg",
+        "image": "/images/太陽的後裔.jpg",
         "name": "ALWAYS(尹美萊)",
         "category": "太陽的後裔",
         "audio": "/Media/ALWAYS.mp3",
@@ -303,7 +303,7 @@
     {
         "id": "8",
         "number": "8.",
-        "image": "/images/雪降花M.jpg",
+        "image": "/images/雪降花M.png",
         "name": "Friend(Kim Hee Won)",
         "category": "雪降花",
         "audio": "/Media/Friend.mp3",

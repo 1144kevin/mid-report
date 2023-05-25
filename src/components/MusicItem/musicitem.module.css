@@ -36,22 +36,3 @@
 .media{
  width: 10%;
 }
-.lyric{
-   width: 300px;
-   height: 340px;
-   overflow: hidden;
-   overflow-y: scroll;
-   
-}
-::-webkit-scrollbar{
-   width: 0.5rem;
-}
-::-webkit-scrollbar-thumb{
-   background-color:black;
-   border-radius: 12px;
-}
-.lyric p{
-   color: black;
-   padding:20px 20px;
-   text-align: justify;
-}

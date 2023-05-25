@@ -73,7 +73,7 @@ console.log(music);
                         {/* <p className={styles.qty}>
                         Total Price: {product.price * qty}
                      </p> */}
-                        <AddToBasket music={music} qty={1} />
+                        <AddToBasket product={music} qty={1} />
                      </div>
 
                   </div>

@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import Scrolltrigger from "../components/Scrolltrigger"
+import banners from "../json/banner.json"
 function Moviepage() {
    const typingContainer = {
       hidden: { opacity: 0},
@@ -21,6 +23,8 @@ function Moviepage() {
 
    return (
       <div>
+         <Scrolltrigger banners={banners}/>
+
          <div style={{height:"1000px",backgroundColor:"yellow"}}>
             11
          </div>

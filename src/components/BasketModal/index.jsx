@@ -37,7 +37,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
          ) : (
             cartItems.map(item => (
                <li key={item.id} className={styles.item}>
-                  <Link to={`/products/id/${item.id}`}>
+                  <Link to={`music/id/${item.id}`}>
                      <div onClick={handleCancel} >
                         <img className={styles.image} src={item.image} alt={item.name} />
                      </div>

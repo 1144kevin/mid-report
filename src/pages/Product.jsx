@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import ProductDetail from "../components/ProductDetail";
 import products from "../json/products.json";
 import music2 from "../json/music2.json";
+import { useEffect } from "react";
 
 function Product() {
    const {
@@ -19,9 +20,13 @@ function Product() {
    const music = music2.find(
        (x) => x.id === musicId
    );
-
+   useEffect(()=>{
+      window.scrollTo(0,-10);
+    },[])
    return (
+      
       <div className="mainLayout">
+           
          <Helmet>
             <title>Music</title>
             <style>{`
