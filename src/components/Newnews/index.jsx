@@ -9,14 +9,15 @@ export default function Newnews() {
     const [isClicked2, setClicked2] = useState(false)
     const [isClicked3, setClicked3] = useState(false)
     const firstanimation = {
-        hidden: { opacity: 0, scaleX:0},
+        hidden: { opacity: 0, scaleX:0,x:-200,y:0},
         visible: {
             opacity: 1, 
             scaleX:1,
+            x:0,y:0,
             transition:{
               duration:.8,
-              delay:1,
-              type:'tween'
+              delay:1.5,
+              type:'linear'
             }
         }
     }

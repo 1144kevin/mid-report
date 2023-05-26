@@ -25,10 +25,10 @@ function App() {
               <Route path="/photoalbum" element={<PhotoAlbum />} />
               <Route path="/login" element={<LOGIN />} />
               <Route path="/movie" element={<Movie />} />
-              <Route path="/photoalbum/music">
+              <Route path="photoalbum/music">
                 <Route path="id/:musicId" element={<Product />} />
               </Route>
-              <Route path="/music" >
+              <Route path="music">
                 <Route path="id/:productId" element={<Product />} />
               </Route>
             </Routes>
