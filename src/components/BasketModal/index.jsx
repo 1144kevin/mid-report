@@ -24,6 +24,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
       ? cartItems.reduce((sum, item) => sum + item.qty, 0)
       : 0;
 
+
    return (
       <Modal
          title="Favorite"
@@ -35,6 +36,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
          {cartItems.length === 0 ? (
             <div>Your favorite is empty</div>
          ) : (
+
             cartItems.map(item => (
                <li key={item.id} className={styles.item}>
                   <Link to={`music/id/${item.id}`}>
@@ -42,6 +44,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                         <img className={styles.image} src={item.image} alt={item.name} />
                      </div>
                   </Link>
+                  
                   <div className={styles.content}>
                      <div className={styles.name}>{item.category}</div>
                      <div className={styles.name}>{item.name}</div>

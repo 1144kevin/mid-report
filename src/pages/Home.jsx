@@ -45,9 +45,9 @@ function Home() {
 
   return (
     <div>
-        {isLoading ? (
-          <Loading />
-        ) : (
+      {isLoading ? (
+        <Loading />
+      ) : (
         <div className="mainLayout">
           <Helmet>
             <title>{title}</title>
@@ -65,15 +65,15 @@ function Home() {
           />
           <Carouseldemo />
           <Newnews />
-          <VideoList videos11={videos11} videos12={videos12} videos21={videos21} videos22={videos22} videos31={videos31} videos32={videos32}/>
+          <VideoList videos11={videos11} videos12={videos12} videos21={videos21} videos22={videos22} videos31={videos31} videos32={videos32} />
           <div className="layoutCOntent container">
             <MusicList products={_products} />
           </div>
 
           <Footer className="layoutFooter" />
         </div>
-        )}
-        </div>
+      )}
+    </div>
   );
 }
 

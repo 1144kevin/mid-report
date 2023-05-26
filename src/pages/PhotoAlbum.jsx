@@ -19,6 +19,7 @@ import VideoList2 from '../components/VideoList2';
 import Person from '../components/Person'
 import React, { useState, useEffect } from "react";
 import Loading from '../components/Loading/Loading';
+import MotionDiv from "../components/MotionDiv"
 
 
 function PhotoAlbum() {
@@ -46,35 +47,35 @@ function PhotoAlbum() {
     : _products[0]?.category;
 
   return (
-      <div>
-        {isLoading ? (
-          <Loading />
-        ) : (
-    <div className="mainLayout">
-      <Helmet>
-        <title>{title}</title>
-        <style>{`
+    <div>
+      {/* {isLoading ? (
+        <Loading />
+      ) : ( */}
+        <MotionDiv className="mainLayout">
+          <Helmet>
+            <title>{title}</title>
+            <style>{`
             body { 
               background-color: ${colorBgBase}; 
               color: ${colorTextBase}
             }
         `}</style>
-      </Helmet>
-      <Header
-        className="layoutHeader"
-        title={title}
-        slogan="An example made by Vite."
-      />
-      <Scrolltrigger banners={banners}/>
-      <VideoList2 videos11={videos11} videos12={videos12} videos21={videos21} videos22={videos22} videos41={videos41} videos42={videos42}/>
-      <Person/>
-      <MList music2={music2} />
-      
-      <Footer className="layoutFooter" />
+          </Helmet>
+          <Header
+            className="layoutHeader"
+            title={title}
+            slogan="An example made by Vite."
+          />
+          <Scrolltrigger banners={banners} />
+          <VideoList2 videos11={videos11} videos12={videos12} videos21={videos21} videos22={videos22} videos41={videos41} videos42={videos42} />
+          <Person />
+          <MList music2={music2} />
+
+          <Footer className="layoutFooter" />
+        </MotionDiv>
+      {/* )} */}
     </div>
- )}
- </div>
-);
+  );
 }
 
 export default PhotoAlbum;

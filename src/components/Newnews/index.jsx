@@ -77,14 +77,14 @@ export default function Newnews() {
                                 <br /><i   onClick={() => { setClicked(!isClicked) }} style={{marginLeft:"16rem",cursor:"pointer"}}>回前頁</i>
                             </motion.p>
                         </div>
-                        <div class="col-lg-4" style={{ padding:"0" ,marginTop:"1rem"}}>
+                        <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
                             <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/NpZeGngWyXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                                 variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
                         </div>
                     </div>
                     <div class="row"
-                        style={{ display: "flex", justifyContent: "center",alignItems:"center", marginRight: "0", padding: "0.5rem 0" }}>
-                        <div class="col-lg-4" style={{ padding:"0" ,marginTop:"1rem"}}>
+                        style={{ display: "flex", justifyContent: "center",alignItems:"center",marginTop:"1rem", marginRight: "0", padding: "0.5rem 0" }}>
+                        <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
                             <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/pL9FrqLPB7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                                 variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
                         </div>
@@ -129,7 +129,7 @@ export default function Newnews() {
                                 <br /><i   onClick={() => { setClicked3(!isClicked3) }} style={{marginLeft:"16rem",cursor:"pointer"}}>回前頁</i>
                             </motion.p>
                         </div>
-                        <div class="col-lg-4" style={{ padding:"0" ,marginTop:"1rem"}}>
+                        <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
                             <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/UIs1SZ-aMCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                             variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
 

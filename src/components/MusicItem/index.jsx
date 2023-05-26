@@ -8,7 +8,7 @@ export default function MusicItem({ product }) {
       <div className={styles.item}>
          <Link to={`music/id/${product.id}`}>
             <img
-               style={{ width: "20rem", height: "13rem" }}
+               style={{ width: "20rem", height: "13rem",objectFit:"cover",objectPosition:"center" }}
                src={product.image}
                alt={product.name} />
          </Link>
