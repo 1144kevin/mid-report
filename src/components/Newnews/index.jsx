@@ -9,10 +9,21 @@ export default function Newnews() {
     const [isClicked2, setClicked2] = useState(false)
     const [isClicked3, setClicked3] = useState(false)
     const firstanimation = {
-        hidden: { opacity: 0, scaleX:0,x:-200,y:0},
+        hidden: { opacity: 0,x:-200,y:0},
         visible: {
             opacity: 1, 
-            scaleX:1,
+            x:0,y:0,
+            transition:{
+              duration:.8,
+              delay:1.5,
+              type:'linear'
+            }
+        }
+    }
+    const secondanimation = {
+        hidden: { opacity: 0,x:200,y:0},
+        visible: {
+            opacity: 1, 
             x:0,y:0,
             transition:{
               duration:.8,
@@ -80,7 +91,7 @@ export default function Newnews() {
                         </div>
                         <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
                             <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/NpZeGngWyXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-                                variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
+                                variants={secondanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
                         </div>
                     </div>
                     <div class="row"
@@ -91,9 +102,9 @@ export default function Newnews() {
                         </div>
                         <div className={`col-lg-3 ${styles.word}`}>
                             <motion.h3
-                                variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}
+                                variants={secondanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}
                             >《黑暗榮耀》</motion.h3>
-                            <motion.p className={styles.originalword} variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }} animate={isClicked2 ? { display: "none" } : { display: "flex" }}> 
+                            <motion.p className={styles.originalword} variants={secondanimation} initial="hidden" whileInView="visible" viewport={{ once: true }} animate={isClicked2 ? { display: "none" } : { display: "flex" }}> 
                             主演：<br />&emsp;宋慧喬,李到晛,林智妍,廉惠蘭<br />
                             類型：<br />&emsp;韓國,戲劇節目,復仇<br />
                             原聲帶:<br />&emsp;漫漫長夜<br />
@@ -132,7 +143,7 @@ export default function Newnews() {
                         </div>
                         <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
                             <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/UIs1SZ-aMCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-                            variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
+                            variants={secondanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
 
                         </div>
                     </div>

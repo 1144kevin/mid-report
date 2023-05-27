@@ -1,22 +1,18 @@
 import { theme } from 'antd';
 import { Helmet } from "react-helmet-async"
-import { useSearchParams } from 'react-router-dom';
-import Header from "../components/Header"
+import ShippingHeader from '../components/ShippingHeader';
 import Footer from "../components/Footer"
-import LoginCard from '../components/LoginCard';
-import MotionDiv from '../components/MotionDiv';
+import PlaceOrderCard from '../components/PlaceOrderCard';
 
-function Login() {
+function PlaceOrder() {
    const {
       token: { colorBgBase, colorTextBase },
    } = theme.useToken();
-   const [searchParams] = useSearchParams();
-   const redirect = searchParams.get('redirect');
 
    return (
-      <MotionDiv className="mainLayout">
+      <div className="mainLayout">
          <Helmet>
-            <title>login</title>
+            <title>product</title>
             <style>{`
                body { 
                   background-color: ${colorBgBase}; 
@@ -24,17 +20,16 @@ function Login() {
                }
             `}</style>
          </Helmet>
-         <Header
+         <ShippingHeader
+            title="PlaceOrder Page" step1 step2 step3 step4
             className="layoutHeader"
-            title="Login"
-            slogan="An example made by Vite."
          />
          <div className="layoutContent container">
-            <LoginCard redirect={redirect} />
+            <PlaceOrderCard />
          </div>
          <Footer className="layoutFooter" />
-      </MotionDiv>
+      </div>
    );
 }
 
-export default Login;
+export default PlaceOrder;

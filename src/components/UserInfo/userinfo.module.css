@@ -1,0 +1,32 @@
+.userInfo {
+  cursor: pointer;
+  display: none;
+}
+
+.userInfoText {
+  font-size: 0.5rem;
+  opacity: 0.8;
+  font-weight: 600;
+  color: white;
+}
+
+.userInfoOutlined {
+  font-size: 1rem;
+  padding: 0rem;
+  color: white;
+}
+
+@media (min-width: 920px) {
+  .userInfoText {
+    font-size: 0.8rem;
+  }
+
+  .userInfo {
+    display: block;
+  }
+
+  .userInfoOutlined {
+    font-size: 1.8rem;
+    padding-right: 0.2rem;
+  }
+}

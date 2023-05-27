@@ -1,41 +1,25 @@
 import 'antd/dist/reset.css';
-import { BrowserRouter, Routes, Route,Router } from 'react-router-dom'
-import { ConfigProvider } from 'antd';
-import { Provider } from "react-redux";
-import { HelmetProvider } from 'react-helmet-async'
 import './App.css';
-import Home from './pages/Home'
-import LOGIN from './pages/LOGIN'
-import Movie from './pages/Moviepage';
-import Product from './pages/Product';
-import PhotoAlbum from './pages/PhotoAlbum';
-import { darkTheme, lightTheme } from './theme';
-import store from './redux/store';
-import { useEffect } from 'react';
+import { Provider } from "react-redux";
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+import Router from './Router';
+import { persistor, store } from './redux/store';
+import { PersistGate } from 'redux-persist/integration/react';
+const queryClient = new QueryClient()
 
 function App() {
 
   return (
-    <Provider store={store}>
-      <ConfigProvider theme={lightTheme} >
-        <HelmetProvider context={{}}>
-          <BrowserRouter >
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/photoalbum" element={<PhotoAlbum />} />
-              <Route path="/login" element={<LOGIN />} />
-              <Route path="/movie" element={<Movie />} />
-              <Route path="photoalbum/music">
-                <Route path="id/:musicId" element={<Product />} />
-              </Route>
-              <Route path="music">
-                <Route path="id/:productId" element={<Product />} />
-              </Route>
-            </Routes>
-          </BrowserRouter>
-        </HelmetProvider>
-      </ConfigProvider>
-    </Provider>
+    <QueryClientProvider client={queryClient}>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Router />
+        </PersistGate>
+      </Provider>
+    </QueryClientProvider>
   );
 }
 
