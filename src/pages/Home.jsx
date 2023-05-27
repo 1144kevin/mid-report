@@ -16,10 +16,13 @@ import VideoList from '../components/VideoList';
 import Newnews from '../components/Newnews';
 import React, { useState, useEffect } from "react";
 import Loading from '../components/Loading/Loading';
+// import { useProducts } from '../react-query';
 
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  // const { data} = useProducts();
+  // const products = data || [{id:1},{id:2},{id:3},{id:4},{id:5},{id:6}];
 
   useEffect(() => {
     // Simulate data loading

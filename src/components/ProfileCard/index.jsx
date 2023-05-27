@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Form, Input, Button } from "antd";
 import styles from "./profilecard.module.css"
 import { useUpdateProfile, useLogout, useUserInfo } from "../../react-query";
+import Title from "../Title";
 
 const ProfileCard = ({ redirect }) => {
   const { data: userInfo } = useUserInfo() || {};
@@ -26,80 +27,84 @@ const ProfileCard = ({ redirect }) => {
   }, [userInfo])
 
   return (
-    <Form
-      onFinish={onUpdate}
-      name="normal_login"
-      className={styles.profileForm}
-      form={form}
-      initialValues={userInfo}
-    >
-      <Form.Item
-        label="姓名: "
-        name="name"
-        rules={[
-          {
-            type: "string",
-            message: "並非有效的姓名!",
-          },
-          {
-            message: "請輸入你的姓名!",
-          },
-        ]}
+    <>
+      <Title title={"Profile"}/>
+      <Form
+        onFinish={onUpdate}
+        name="normal_login"
+        className={styles.profileForm}
+        form={form}
+        initialValues={userInfo}
       >
-        <Input placeholder={userInfo.name} />
-      </Form.Item>
-      <Form.Item
-        label="地址: "
-        name="adrs"
-        rules={[
-          {
-            type: "string",
-            message: "並非有效的電話號碼!",
-          },
-          {
-            message: "請輸入你的電話號碼!",
-          },
-        ]}
-      >
-        <Input placeholder={userInfo?.adrs || ""} />
-      </Form.Item>
-      <Form.Item
-        label="電話: "
-        name="tel"
-        rules={[
-          {
-            type: "string",
-            message: "並非有效的電話號碼!",
-          },
-          {
-            message: "請輸入你的電話號碼!",
-          },
-        ]}
-      >
-        <Input placeholder={userInfo?.tel || 'xxxx-xxxxxx'} />
-      </Form.Item>
-
-      <Form.Item>
-        <Button
-          type="primary"
-          htmlType="submit"
-          className={styles.profileForm__button}
-          onClick={onUpdate}
+        <Form.Item
+          label="姓名: "
+          name="name"
+          rules={[
+            {
+              type: "string",
+              message: "並非有效的姓名!",
+            },
+            {
+              message: "請輸入你的姓名!",
+            },
+          ]}
         >
-          Submit
-        </Button>
-
-        <Button
-          type="primary"
-          danger
-          style={{ marginTop: "1rem" }}
-          className={styles.profileForm__button}
-          onClick={onLogout}
+          <Input placeholder={userInfo.name} />
+        </Form.Item>
+        <Form.Item
+          label="地址: "
+          name="adrs"
+          rules={[
+            {
+              type: "string",
+              message: "並非有效的電話號碼!",
+            },
+            {
+              message: "請輸入你的電話號碼!",
+            },
+          ]}
         >
-          Log out
-        </Button>
-      </Form.Item>
-    </Form>
+          <Input placeholder={userInfo?.adrs || ""} />
+        </Form.Item>
+        <Form.Item
+          label="電話: "
+          name="tel"
+          rules={[
+            {
+              type: "string",
+              message: "並非有效的電話號碼!",
+            },
+            {
+              message: "請輸入你的電話號碼!",
+            },
+          ]}
+        >
+          <Input placeholder={userInfo?.tel || 'xxxx-xxxxxx'} />
+        </Form.Item>
+
+        <Form.Item>
+          <Button
+            type="primary"
+            htmlType="submit"
+            className={styles.profileForm__button}
+            onClick={onUpdate}
+          >
+            Submit
+          </Button>
+
+          <Button
+            type="primary"
+            danger
+            style={{ marginTop: "1rem" }}
+            className={styles.profileForm__button}
+            onClick={onLogout}
+          >
+            Log out
+          </Button>
+        </Form.Item>
+      </Form>
+    </>
+
   );
 };
 export default ProfileCard;
