@@ -7,7 +7,7 @@
   right: 0rem;
   top: 0rem;
   display: grid;
-  grid-template-columns: repeat(2, 2.5rem);
+  grid-template-columns: repeat(3, 2.5rem);
 }
 
 .hideInMobile {

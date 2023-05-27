@@ -1,6 +1,6 @@
 .userInfo {
   cursor: pointer;
-  display: none;
+  margin-top: 0.1rem;
 }
 
 .userInfoText {
@@ -11,7 +11,7 @@
 }
 
 .userInfoOutlined {
-  font-size: 1rem;
+  font-size:2rem;
   padding: 0rem;
   color: white;
 }
@@ -23,6 +23,7 @@
 
   .userInfo {
     display: block;
+    margin-top: 0rem;
   }
 
   .userInfoOutlined {

@@ -1,11 +1,19 @@
 import {notification } from "antd"
 import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { useUserInfo } from "../../react-query";
 import { addCartItems } from "../../redux/cartSlice";
 import styles from "./addtobasket.module.css"
 import { HeartFilled } from '@ant-design/icons';
 
 export default function AddToCart({ product, qty }) {
   const dispatch = useDispatch();
+  
+  const { data: userInfo } = useUserInfo();
+  const navigate = useNavigate();
+  const checkoutHandler = () => {
+      navigate("/auth/login");
+  };
 
   const openNotification = () => {
     notification.open({
@@ -30,7 +38,7 @@ export default function AddToCart({ product, qty }) {
   };
 
   return (
-    <button className={styles.btn} onClick={addToCart}>
+    <button className={styles.btn} onClick={(userInfo?.name)?addToCart:checkoutHandler}>
       <h6>ADD</h6>
     </button>
   );

@@ -24,9 +24,11 @@ function Router() {
               <Route path="/movie" element={<Movie />} />
               <Route path="photoalbum/music">
                 <Route path="id/:musicId" element={<Product />} />
+                <Route path="id/:musicId/photoalbum/music/id/:musicId" element={<Product />} />
               </Route>
               <Route path="music">
                 <Route path="id/:productId" element={<Product />} />
+                <Route path="id/:productId/music/id/:productId" element={<Product />} />
               </Route>
               <Route path="auth">
               <Route path="login" element={<Login />} />

@@ -1,8 +1,8 @@
 import { Modal, Button, Select } from "antd";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addCartItems, removeCartItems } from "../../redux/cartSlice";
-
+import { useUserInfo } from "../../react-query";
 import styles from "./basketmodal.module.css"
 import { CartIcon } from "./Icons";
 import { selectCartItems } from "../../redux/cartSlice";
@@ -13,6 +13,8 @@ const { Option } = Select;
 export default function BasketModal({ isOpen, toggleModal }) {
    const dispatch = useDispatch();
    const cartItems = useSelector(selectCartItems);
+   const { data: userInfo } = useUserInfo();
+   const navigate = useNavigate();
 
    const handleCancel = () => toggleModal(!isOpen);
    // const getTotalPrice = () => {
@@ -23,6 +25,13 @@ export default function BasketModal({ isOpen, toggleModal }) {
    const qty = (cartItems.length > 0)
       ? cartItems.reduce((sum, item) => sum + item.qty, 0)
       : 0;
+   const checkoutHandler = () => {
+      handleCancel();
+      if (userInfo?.name)
+         navigate("/")
+      else
+         navigate("/auth/login");
+   };
 
 
    return (
@@ -44,7 +53,7 @@ export default function BasketModal({ isOpen, toggleModal }) {
                         <img className={styles.image} src={item.image} alt={item.name} />
                      </div>
                   </Link>
-                  
+
                   <div className={styles.content}>
                      <div className={styles.name}>{item.category}</div>
                      <div className={styles.name}>{item.name}</div>
@@ -74,8 +83,8 @@ export default function BasketModal({ isOpen, toggleModal }) {
                         $
                      </div> */}
                      <div className={styles.delete} onClick={() => dispatch(removeCartItems(item.id))}>
-                     <DeleteOutlined 
-                     style={{ fontSize: "15px", color: "black" }}/>
+                        <DeleteOutlined
+                           style={{ fontSize: "15px", color: "black" }} />
                      </div>
                   </div>
                </li>
@@ -88,11 +97,12 @@ export default function BasketModal({ isOpen, toggleModal }) {
          <Button
             className={styles.btn}
             type="primary"
+            onClick={checkoutHandler}
          >
             <HeartFilled
                style={{ fontSize: "20px", color: "white" }}
             />
-            <span style={{ marginLeft: 5 ,fontFamily: "SNsanafonmaru"}}>save</span>
+            <span style={{ marginLeft: 5, fontFamily: "SNsanafonmaru" }}>save</span>
          </Button>
       </Modal>
    );

@@ -17,7 +17,7 @@ import {
   createUserWithEmailAndPassword,
   initializeAuth,
 } from 'firebase/auth';
-// import _ from "lodash";
+ import _ from "lodash";
 // import products from "../json/products.json";
 
 const firebaseConfig = {

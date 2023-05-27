@@ -5,6 +5,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import LoginCard from '../components/LoginCard';
 import MotionDiv from '../components/MotionDiv';
+import { useEffect } from "react";
 
 function Login() {
    const {
@@ -12,8 +13,11 @@ function Login() {
    } = theme.useToken();
    const [searchParams] = useSearchParams();
    const redirect = searchParams.get('redirect');
+   useEffect(()=>{
+      window.scrollTo(0,-10);
+    },[])
 
-   return (
+   return(
       <MotionDiv className="mainLayout">
          <Helmet>
             <title>login</title>

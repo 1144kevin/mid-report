@@ -84,6 +84,7 @@ const ProfileCard = ({ redirect }) => {
           type="primary"
           htmlType="submit"
           className={styles.profileForm__button}
+          onClick={onUpdate}
         >
           Submit
         </Button>

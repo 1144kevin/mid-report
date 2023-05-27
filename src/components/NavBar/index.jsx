@@ -12,7 +12,7 @@ export default function NavBar({ open, onClose }) {
             </NavLink>
             <NavLink to="/login"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                登入
+                會員
             </NavLink>
             <NavLink to="/photoalbum"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>

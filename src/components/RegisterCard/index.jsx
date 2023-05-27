@@ -23,6 +23,10 @@ const RegisterCard = ({ redirect }) => {
     }
   }, [isSuccess, redirect]); 
 
+  const OnSubmit = () => {
+    navigate("/");
+  };
+
   return (
     <Form
       form={form}
@@ -119,13 +123,16 @@ const RegisterCard = ({ redirect }) => {
         </Checkbox>
       </Form.Item>
       <Form.Item>
+      
         {isLoading ? (
           <Button
             type="primary"
             className={styles.loginForm__button}
             htmlType="submit"
             loading
+            onClick={OnSubmit}
           >
+          
           Create your account
           </Button>
           
