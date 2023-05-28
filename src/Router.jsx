@@ -7,7 +7,7 @@ import Movie from './pages/Moviepage';
 import Product from './pages/Product';
 import PhotoAlbum from './pages/PhotoAlbum';
 import { darkTheme, lightTheme } from './theme';
-import Login from './pages/Login'
+import Signin from './pages/Signin'
 import Register from './pages/Register';
 import Profile from './pages/Profile';
 
@@ -20,7 +20,7 @@ function Router() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/photoalbum" element={<PhotoAlbum />} />
-              <Route path="/login" element={<Login />} />
+              <Route path="/login" element={<Signin />} />
               <Route path="/movie" element={<Movie />} />
               <Route path="photoalbum/music">
                 <Route path="id/:musicId" element={<Product />} />
@@ -31,7 +31,7 @@ function Router() {
                 <Route path="id/:productId/music/id/:productId" element={<Product />} />
               </Route>
               <Route path="auth">
-              {/* <Route path="login" element={<Login />} /> */}
+              <Route path="login" element={<Signin />} />
               <Route path="register" element={<Register />} />
               <Route path="profile" element={<Profile />} />
             </Route>
