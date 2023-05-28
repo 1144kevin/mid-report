@@ -36,75 +36,73 @@ const ProfileCard = ({ redirect }) => {
         form={form}
         initialValues={userInfo}
       >
-        <Form.Item
-          label="姓名: "
-          name="name"
-          rules={[
-            {
-              type: "string",
-              message: "並非有效的姓名!",
-            },
-            {
-              message: "請輸入你的姓名!",
-            },
-          ]}
-        >
-          <Input placeholder={userInfo.name} />
-        </Form.Item>
-        <Form.Item
-          label="地址: "
-          name="adrs"
-          rules={[
-            {
-              type: "string",
-              message: "並非有效的電話號碼!",
-            },
-            {
-              message: "請輸入你的電話號碼!",
-            },
-          ]}
-        >
-          <Input placeholder={userInfo?.adrs || ""} />
-        </Form.Item>
-        <Form.Item
-          label="電話: "
-          name="tel"
-          rules={[
-            {
-              type: "string",
-              message: "並非有效的電話號碼!",
-            },
-            {
-              message: "請輸入你的電話號碼!",
-            },
-          ]}
-        >
-          <Input placeholder={userInfo?.tel || 'xxxx-xxxxxx'} />
-        </Form.Item>
+       <Form.Item
+        label="姓名: "
+        name="name"
+        rules={[
+          {
+            type: "string",
+            message: "並非有效的姓名!",
+          },
+          {
+            message: "請輸入你的姓名!",
+          },
+        ]}
+      >
+        <Input placeholder={userInfo.name} />
+      </Form.Item>
+      <Form.Item
+        label="地址: "
+        name="adrs"
+        rules={[
+          {
+            type: "string",
+            message: "並非有效的電話號碼!",
+          },
+          {
+            message: "請輸入你的電話號碼!",
+          },
+        ]}
+      >
+        <Input placeholder={userInfo?.adrs || ""} />
+      </Form.Item>
+      <Form.Item
+        label="電話: "
+        name="tel"
+        rules={[
+          {
+            type: "string",
+            message: "並非有效的電話號碼!",
+          },
+          {
+            message: "請輸入你的電話號碼!",
+          },
+        ]}
+      >
+        <Input placeholder={userInfo?.tel || 'xxxx-xxxxxx'} />
+      </Form.Item>
 
-        <Form.Item>
-          <Button
-            type="primary"
-            htmlType="submit"
-            className={styles.profileForm__button}
-            onClick={onUpdate}
-          >
-            Submit
-          </Button>
+      <Form.Item>
+        <Button
+          type="primary"
+          htmlType="submit"
+          className={styles.profileForm__button}
+          onClick={onUpdate}
+        >
+          提出修改
+        </Button>
 
-          <Button
-            type="primary"
-            danger
-            style={{ marginTop: "1rem" }}
-            className={styles.profileForm__button}
-            onClick={onLogout}
-          >
-            Log out
-          </Button>
-        </Form.Item>
-      </Form>
-    </>
-
+        <Button
+          type="primary"
+          danger
+          style={{ marginTop: "1rem" }}
+          className={styles.profileForm__button2}
+          onClick={onLogout}
+        >
+          登出
+        </Button>
+      </Form.Item>
+    </Form>
   );
 };
 export default ProfileCard;
