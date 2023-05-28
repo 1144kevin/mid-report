@@ -38,132 +38,133 @@ const RegisterCard = ({ redirect }) => {
         className={styles.registerForm}
         scrollToFirstError
       >
-        <Form.Item
-          name="name"
-          label="Your Name"
-          tooltip="What do you want others to call you?"
-          rules={[
-            {
-              required: true,
-              message: "Please input your name!",
-              whitespace: true,
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name="email"
-          label="E-mail"
-          rules={[
-            {
-              type: "email",
-              message: "The input is not valid E-mail!",
-            },
-            {
-              required: true,
-              message: "Please input your E-mail!",
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
+       <Form.Item
+        name="name"
+        label="你的名字"
+        tooltip="What do you want others to call you?"
+        rules={[
+          {
+            required: true,
+            message: "請輸入您的名字!",
+            whitespace: true,
+          },
+        ]}
+      >
+        <Input />
+      </Form.Item>
+      <Form.Item
+        name="email"
+        label="電子郵件"
+        rules={[
+          {
+            type: "email",
+            message: "請輸入正確的格式!",
+          },
+          {
+            required: true,
+            message: "請輸入您的電子郵件!",
+          },
+        ]}
+      >
+        <Input />
+      </Form.Item>
 
-        <Form.Item
-          name="password"
-          label="Password"
-          rules={[
-            {
-              required: true,
-              message: "Please input your password!",
-            },
-          ]}
-          hasFeedback
-        >
-          <Input.Password />
-        </Form.Item>
+      <Form.Item
+        name="password"
+        label="密碼"
+        rules={[
+          {
+            required: true,
+            message: "請輸入您的密碼!",
+          },
+        ]}
+        hasFeedback
+      >
+        <Input.Password />
+      </Form.Item>
 
-        <Form.Item
-          name="rePassword"
-          label="Re-enter Password"
-          dependencies={["password"]}
-          hasFeedback
-          rules={[
-            {
-              required: true,
-              message: "Please re-enter your password!",
-            },
-            ({ getFieldValue }) => ({
-              validator(_, value) {
-                if (!value || getFieldValue("password") === value) {
-                  return Promise.resolve();
-                }
+      <Form.Item
+        name="rePassword"
+        label="確認密碼"
+        dependencies={["password"]}
+        hasFeedback
+        rules={[
+          {
+            required: true,
+            message: "請再次輸入您的密碼!",
+          },
+          ({ getFieldValue }) => ({
+            validator(_, value) {
+              if (!value || getFieldValue("password") === value) {
+                return Promise.resolve();
+              }
 
-                return Promise.reject(
-                  new Error("The two passwords that you entered do not match!")
-                );
-              },
-            }),
-          ]}
-        >
-          <Input.Password />
-        </Form.Item>
-
-        <Form.Item
-          name="agreement"
-          valuePropName="checked"
-          rules={[
-            {
-              validator: (_, value) =>
-                value
-                  ? Promise.resolve()
-                  : Promise.reject(new Error("Should accept agreement")),
+              return Promise.reject(
+                new Error("The two passwords that you entered do not match!")
+              );
             },
-          ]}
-        >
-          <Checkbox>
-            I have read the <Link to={"/"}>agreement</Link>
+          }),
+        ]}
+      >
+        <Input.Password />
+      </Form.Item>
+
+      <Form.Item
+        name="agreement"
+        valuePropName="checked"
+        rules={[
+          {
+            validator: (_, value) =>
+              value
+                ? Promise.resolve()
+                : Promise.reject(new Error("Should accept agreement")),
+          },
+        ]}
+      >
+        
+        <Checkbox>
+        <p className={styles.loginForm__or}>
+          我以閱讀並瞭解 <Link className={styles.loginForm__read} to={"/"}>服務條款</Link>及<Link className={styles.loginForm__read} to={"/"}>隱私權聲明</Link>。
+          </p>
           </Checkbox>
-        </Form.Item>
-        <Form.Item>
-
-          {isLoading ? (
-            <Button
-              type="primary"
-              className={styles.loginForm__button}
-              htmlType="submit"
-              loading
-              onClick={OnSubmit}
-            >
-              Create your account
-            </Button>
-
-          ) : (
-            <Button
-              type="primary"
-              className={styles.loginForm__button}
-              htmlType="submit"
-            >
-              Create your account
-            </Button>
-          )}
-          Already have an account?{" "}
-          <Link to={`/auth/login?redirect=${redirect}`}>Login</Link>
-
-          {!isError ? (
-            <></>
-          ) : (
-            <div className={styles.loginForm__errorWrap}>
-              <h3 className={styles.loginForm__errorTitle}>
-                <WarningOutlined />
-                {"  "}There was a problem
-              </h3>
-              <p className={styles.loginForm__errorMessage}>{error.message}</p>
-            </div>
-          )}
-        </Form.Item>
-      </Form>
-    </>
+      </Form.Item>
+      <Form.Item>
+        {isLoading ? (
+          <Button
+            type="primary"
+            className={styles.loginForm__button}
+            htmlType="submit"
+            loading
+          >
+          註冊帳號
+          </Button>
+          
+        ) : (
+          <Button
+            type="primary"
+            className={styles.loginForm__button}
+            htmlType="submit"
+          >
+            註冊帳戶
+          </Button>
+        )}
+        < div className={styles.yes}>
+        已經擁有帳戶?{" "}
+        <Link className={styles.loginForm__read} to={`/auth/login?redirect=${redirect}`}>登入</Link>
+        </div>
+        {!isError ? (
+          <></>
+        ) : (
+          <div className={styles.loginForm__errorWrap}>
+            <h3 className={styles.loginForm__errorTitle}>
+              <WarningOutlined  />
+              {"  "}發現問題
+            </h3>
+            <p className={styles.loginForm__errorMessage}>{error.message}</p>
+          </div>
+        )}
+      </Form.Item>
+    </Form>
   );
 };
 export default RegisterCard;
