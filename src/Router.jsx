@@ -20,7 +20,7 @@ function Router() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/photoalbum" element={<PhotoAlbum />} />
-              {/* <Route path="/login" element={<Login />} /> */}
+              <Route path="/login" element={<Login />} />
               <Route path="/movie" element={<Movie />} />
               <Route path="photoalbum/music">
                 <Route path="id/:musicId" element={<Product />} />
@@ -31,7 +31,7 @@ function Router() {
                 <Route path="id/:productId/music/id/:productId" element={<Product />} />
               </Route>
               <Route path="auth">
-              <Route path="login" element={<Login />} />
+              {/* <Route path="login" element={<Login />} /> */}
               <Route path="register" element={<Register />} />
               <Route path="profile" element={<Profile />} />
             </Route>
