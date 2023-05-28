@@ -65,7 +65,7 @@
   padding-bottom: 4rem;
   font-size: 1rem;
 }
-i:hover{
+.click:hover{
   transform: scale(1.2);
 }
 .button {

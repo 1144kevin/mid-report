@@ -124,6 +124,7 @@ const LoginCard = ({ redirect }) => {
             )}
          </Form.Item>
       </Form>
+      </>
    );
 };
 

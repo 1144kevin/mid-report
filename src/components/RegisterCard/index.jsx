@@ -165,6 +165,7 @@ const RegisterCard = ({ redirect }) => {
         )}
       </Form.Item>
     </Form>
+    </>
   );
 };
 export default RegisterCard;

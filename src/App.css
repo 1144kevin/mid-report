@@ -108,3 +108,22 @@ body {
 .ant-modal{
   font-family: 'Cubic' !important;
 }
+
+.ant-checkbox-checked .ant-checkbox-inner{
+  background-color: #fabc47!important;
+  border-color: #fabc47!important;
+}
+.ant-checkbox-checked .ant-checkbox-inner:hover{
+  background-color: #fabc47!important;
+  border-color: #fabc47!important;
+}
+.ant-checkbox .ant-checkbox-inner{
+  border-color: #fabc47 !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner:after {
+  background-color: #fabc47!important;
+  border-color: white !important;
+}
+.ant-form label{
+  color: black;
+}
