@@ -78,3 +78,33 @@ body {
 .layoutContent {
   grid-area: content;
 }
+.ant-input {
+	border-radius: 1rem;
+  font-family: 'Cubic';
+  color: #906a48;
+}
+
+.ant-input:hover {
+	border: 0.1rem #fe9e49 solid;
+}
+
+.ant-input-affix-wrapper:hover {
+  border: 0.1rem #fe9e49 solid !important;
+}
+
+.ant-input-affix-wrapper-focused {
+  /* border: 1px rgba(77, 112, 114, 0.2) solid !important; */
+  color:#fabc47 !important;
+}
+.ant-form-item-explain-error{
+  font-family: 'Cubic' !important;
+}
+.ant-form-item-label{
+  font-family: 'Cubic' !important;
+}
+.ant-modal{
+  font-family: 'Cubic' !important;
+}
+.ant-modal{
+  font-family: 'Cubic' !important;
+}
