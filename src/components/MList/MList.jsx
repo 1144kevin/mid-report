@@ -45,13 +45,13 @@ export default function MList({ music2 }) {
             {music2.map(music => (
               <List.Item>
                 <div class="row" style={{minHeight:"6rem", display: 'flex', justifyContent: "center",alignItems:"center"}}>
-                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex',justifyContent:"center",alignItems:"center" ,fontFamily: "SNsanafonmaru" }}>
+                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex',justifyContent:"center",alignItems:"center" ,fontFamily: "Cubic" }}>
                   <h3 style={{marginRight:"1rem"}}>{music.number}</h3>
                   <Link to={`music/id/${music.id}`}>
                     <img src={music.image} style={{ width: '50px', height: '60px', objectFit: "cover", objectPosition: "center" }} />
                   </Link>
                 </div>
-                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex',justifyContent:"center",alignItems:"center" ,flexDirection: 'column', textAlign: "center", fontFamily: "SNsanafonmaru" }}>
+                <div className="col-xs-3 col-md-3 col-lg-3 bag4" style={{ display: 'flex',justifyContent:"center",alignItems:"center" ,flexDirection: 'column', textAlign: "center", fontFamily: "Cubic" }}>
                   <p style={{ color: 'rgb(244, 144, 61)',margin:"0" }}>{music.name}</p>
                   <p style={{ margin:"0" }}>{music.category}</p>
                 </div>
