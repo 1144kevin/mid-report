@@ -5,17 +5,42 @@
   max-width: 30rem;
 }
 
+
 .loginForm__forgot {
    float: right;
  }
  
  .loginForm__forgot {
    float: left;
+
  }
- 
- .loginForm__button {
-   width: 100%;
- }
+
+ .loginForm__read {
+  color: #fe9e49;
+}
+.loginForm__read:hover {
+  color: #fabc47 !important;
+}
+
+.loginForm__button {
+  width: 100%;
+  color: #ffffff;
+  background-color:#fe9e49;
+  border: none;
+	border-radius: 0.7rem;
+  font-family: 'Cubic';
+}
+
+.loginForm__button:hover {
+  background-color: #fabc47 !important;
+  transition: all 0.5s;
+}
+
+.loginForm__button:focus {
+  background-color:#fe9e49;
+  border: none;
+  opacity: 0.8;
+}
  
  .loginForm__successWrap {
    margin-top: 1rem;
@@ -52,3 +77,10 @@
    font-size: 0.5rem;
  }
  
+ .yes{
+  margin-top: 5PX;
+  font-family: 'Cubic';
+ }
+.loginForm__or {
+  font-family: 'Cubic';
+}
