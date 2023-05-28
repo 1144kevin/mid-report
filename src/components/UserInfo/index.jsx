@@ -23,8 +23,8 @@ export default function UserInfo(props) {
          }
          <p className={styles.userInfoText}>
             {!!userInfo?.name
-               ? `${userInfo.name}'s`
-               : `請登入`
+               ? `${userInfo.name}`
+               : `登入`
             }
          </p>
       </div>
