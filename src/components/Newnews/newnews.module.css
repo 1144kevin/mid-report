@@ -7,7 +7,7 @@
   font-size: 1.5rem;
   padding: 0;
   color: white;
-  font-family: 'SNsanafonmaru';
+  font-family: 'Cubic';
 }
 
 @media (min-width: 768px) {
@@ -42,7 +42,7 @@
   align-items: center;
   margin: 0 4rem;
   color: white;
-  font-family: 'SNsanafonmaru';
+  font-family: 'Cubic';
   font-weight: 600;
 }
 .word h5{
@@ -80,7 +80,7 @@ i:hover{
   border-radius: 2rem;
   background-color: black;
   color: white;
-  font-family: 'SNsanafonmaru';
+  font-family: 'Cubic';
   transform-origin: left;
 }
 
