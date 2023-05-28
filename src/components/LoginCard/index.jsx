@@ -29,7 +29,7 @@ const LoginCard = ({ redirect }) => {
 
    return (
       <>
-         <Title title={"Login"} />
+         <Title title={"登入帳戶"} />
          <Form
             name="normal_login"
             className={styles.loginForm}

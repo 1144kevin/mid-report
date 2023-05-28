@@ -30,7 +30,7 @@ const RegisterCard = ({ redirect }) => {
 
   return (
     <>
-      <Title title={"Register"} />
+      <Title title={"註冊帳戶"} />
       <Form
         form={form}
         name="register"
@@ -135,7 +135,6 @@ const RegisterCard = ({ redirect }) => {
               loading
               onClick={OnSubmit}
             >
-
               Create your account
             </Button>
 

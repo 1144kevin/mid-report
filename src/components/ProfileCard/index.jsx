@@ -28,7 +28,7 @@ const ProfileCard = ({ redirect }) => {
 
   return (
     <>
-      <Title title={"Profile"}/>
+      <Title title={"個人資料"}/>
       <Form
         onFinish={onUpdate}
         name="normal_login"

@@ -78,7 +78,7 @@ export default function Newnews() {
                             主演：<br />&emsp;崔宇植,金多美,金聖喆,盧正義<br />
                             類型：<br />&emsp;韓國,喜劇節目,浪漫節目<br />
                             原聲帶:<br />&emsp;Christmas Tree<br />
-                            &emsp;我們要分手的理由<br /><i   onClick={() => { setClicked(!isClicked) }} style={{marginTop:"10rem",cursor:"pointer"}}>更多</i>
+                            &emsp;我們要分手的理由<br /><i   onClick={() => { setClicked(!isClicked) }} style={{fontSize:"0.8rem",marginTop:"10rem",cursor:"pointer"}}>更多</i>
                             </motion.p>
                             <motion.p variants={typingContainer} initial="hidden"  animate={isClicked ? 'show' : 'hidden'}>
                                 {
@@ -86,7 +86,7 @@ export default function Newnews() {
                                         <motion.span key={i} variants={typingText}>{word}</motion.span>
                                     ))
                                 }
-                                <br /><i   onClick={() => { setClicked(!isClicked) }} style={{marginLeft:"16rem",cursor:"pointer"}}>回前頁</i>
+                                <br /><i   onClick={() => { setClicked(!isClicked) }} style={{fontSize:"0.8rem",marginLeft:"16rem",cursor:"pointer"}}>回前頁</i>
                             </motion.p>
                         </div>
                         <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
@@ -108,7 +108,7 @@ export default function Newnews() {
                             主演：<br />&emsp;宋慧喬,李到晛,林智妍,廉惠蘭<br />
                             類型：<br />&emsp;韓國,戲劇節目,復仇<br />
                             原聲帶:<br />&emsp;漫漫長夜<br />
-                            &emsp;Until The End<br /><i   onClick={() => { setClicked2(!isClicked2) }} style={{marginTop:"10rem",cursor:"pointer"}}>更多</i>
+                            &emsp;Until The End<br /><i   onClick={() => { setClicked2(!isClicked2) }} style={{fontSize:"0.8rem",marginTop:"10rem",cursor:"pointer"}}>更多</i>
                             </motion.p>
                             <motion.p variants={typingContainer} initial="hidden"  animate={isClicked2 ? 'show' : 'hidden'}>
                                 {
@@ -116,7 +116,7 @@ export default function Newnews() {
                                         <motion.span key={i} variants={typingText}>{word}</motion.span>
                                     ))
                                 }
-                                <br /><i   onClick={() => { setClicked2(!isClicked2) }} style={{marginLeft:"16rem",cursor:"pointer"}}>回前頁</i>
+                                <br /><i   onClick={() => { setClicked2(!isClicked2) }} style={{fontSize:"0.8rem",marginLeft:"16rem",cursor:"pointer"}}>回前頁</i>
                             </motion.p>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ export default function Newnews() {
                             主演：<br />&emsp;Jenna Ortega,Gwendoline Christie<br />
                             類型：<br />&emsp;青少年,喜劇節目,犯罪節目<br />
                             原聲帶:<br />&emsp;Wednesday Main Titles<br />
-                            &emsp;Morticia and Wednesday<br /><i   onClick={() => { setClicked3(!isClicked3) }} style={{marginTop:"10rem",cursor:"pointer"}}>更多</i>
+                            &emsp;Morticia and Wednesday<br /><i   onClick={() => { setClicked3(!isClicked3) }} style={{fontSize:"0.8rem",marginTop:"10rem",cursor:"pointer"}}>更多</i>
                             </motion.p>
                             <motion.p variants={typingContainer} initial="hidden" animate={isClicked3 ? 'show' : 'hidden'}>
                                 {
@@ -138,7 +138,7 @@ export default function Newnews() {
                                         <motion.span key={i} variants={typingText}>{word}</motion.span>
                                     ))
                                 }
-                                <br /><i   onClick={() => { setClicked3(!isClicked3) }} style={{marginLeft:"16rem",cursor:"pointer"}}>回前頁</i>
+                                <br /><i   onClick={() => { setClicked3(!isClicked3) }} style={{fontSize:"0.8rem",marginLeft:"16rem",cursor:"pointer"}}>回前頁</i>
                             </motion.p>
                         </div>
                         <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
