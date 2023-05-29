@@ -72,7 +72,7 @@ export default function Newnews() {
                             style={{ marginBottom: "3rem", padding: "0" }}>
                             <div class="row"
                                 style={{ display: "flex", justifyContent: "center", alignItems: "center", marginRight: "0", padding: "0.5rem 0" }}>
-                                <div className={`col-lg-3 ${styles.word}`} >
+                                <div className={`col-lg-3 col-sm-12${styles.word}`} >
                                     <motion.h3
                                         variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}
                                     >《那年，我們的夏天》</motion.h3>
@@ -91,10 +91,10 @@ export default function Newnews() {
                                         <br /><i className={styles.click} onClick={() => { setClicked(!isClicked) }} style={{ fontSize: "0.8rem", marginLeft: "16rem", cursor: "pointer" }}>回前頁</i>
                                     </motion.p>
                                 </div>
-                               {/* <div class="col-lg-4" style={{ display: "flex", justifyContent: "center", padding: "0", marginTop: "1rem" }}>
+                                <div class="col-lg-4 col-sm-12" style={{ display: "flex", justifyContent: "center", padding: "0", marginTop: "1rem" }}>
                                     <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/NpZeGngWyXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                                         variants={secondanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
-                                </div>*/}
+                                </div>
                             </div>
                             {/* <div class="row"
                         style={{ display: "flex", justifyContent: "center",alignItems:"center",marginTop:"1rem", marginRight: "0", padding: "0.5rem 0" }}>
