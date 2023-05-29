@@ -9,7 +9,7 @@ export default function Newnews() {
     const [isClicked2, setClicked2] = useState(false)
     const [isClicked3, setClicked3] = useState(false)
     const firstanimation = {
-        hidden: { opacity: 0,x:-200,y:0},
+        hidden: { opacity: 0},
         visible: {
             opacity: 1, 
             x:0,y:0,
@@ -21,7 +21,7 @@ export default function Newnews() {
         }
     }
     const secondanimation = {
-        hidden: { opacity: 0,x:200,y:0},
+        hidden: { opacity: 0},
         visible: {
             opacity: 1, 
             x:0,y:0,
