@@ -5,7 +5,7 @@ import styles from './musiclist.module.css'
 
 export default function ProductList({ products }) {
   return (
-    <Row gutter={[64, 32]} style={{ justifyContent: "center" }}>
+    <Row style={{ justifyContent: "center" }}>
       <Row
         style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
         <Col
