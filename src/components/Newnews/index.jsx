@@ -71,7 +71,7 @@ export default function Newnews() {
                     <div class="row"
                         style={{ display: "flex", justifyContent: "center",alignItems:"center", marginRight: "0", padding: "0.5rem 0" }}>
                         <div className={`col-lg-3 ${styles.word}`} >
-                            <motion.h3
+                             {/* <motion.h3
                                 variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}
                             >《那年，我們的夏天》</motion.h3>
                             <motion.p className={styles.originalword} variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }} animate={isClicked ? { display: "none" } : { display: "flex" }}> 
@@ -79,15 +79,15 @@ export default function Newnews() {
                             類型：<br />&emsp;韓國,喜劇節目,浪漫節目<br />
                             原聲帶:<br />&emsp;Christmas Tree<br />
                             &emsp;我們要分手的理由<br /><i className={styles.click}   onClick={() => { setClicked(!isClicked) }} style={{fontSize:"0.8rem",marginTop:"11rem",cursor:"pointer"}}>更多</i>
-                            </motion.p>
-                            {/* <motion.p variants={typingContainer} initial="hidden"  animate={isClicked ? 'show' : 'hidden'}>
+                            </motion.p> */}
+                             <motion.p variants={typingContainer} initial="hidden"  animate={isClicked ? 'show' : 'hidden'}>
                                 {
                                     Array.from("韓國SBS於2021年12月6日起播出的連續劇。由金允珍導演與李娜恩編劇共同創作。此劇講述曾經的全校第一與全校最後一名，因十年前高中拍攝的紀錄片「逆行」引發話題，讓兩人被迫再次站在鏡頭前，是部描述他們之間複雜微妙感情的喜劇").map((word, i) => (
                                         <motion.span key={i} variants={typingText}>{word}</motion.span>
                                     ))
                                 }
                                 <br /><i className={styles.click}  onClick={() => { setClicked(!isClicked) }} style={{fontSize:"0.8rem",marginLeft:"16rem",cursor:"pointer"}}>回前頁</i>
-                            </motion.p> */}
+                            </motion.p> 
                         </div>
                         <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
                             <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/NpZeGngWyXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
