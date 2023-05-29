@@ -90,14 +90,14 @@ export default function Newnews() {
                             </motion.p> 
                         </div>
                         <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
-                            <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/NpZeGngWyXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                            <motion.iframe width="100%" height="320" src="https://www.youtube.com/embed/NpZeGngWyXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                                 variants={secondanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
                         </div>
                     </div>
                      <div class="row"
                         style={{ display: "flex", justifyContent: "center",alignItems:"center",marginTop:"1rem", marginRight: "0", padding: "0.5rem 0" }}>
                         <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
-                            <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/pL9FrqLPB7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                            <motion.iframe width="100%" height="320" src="https://www.youtube.com/embed/pL9FrqLPB7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                                 variants={firstanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
                         </div>
                         <div className={`col-lg-3 ${styles.word}`}>
@@ -142,7 +142,7 @@ export default function Newnews() {
                             </motion.p>
                         </div>
                         <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
-                            <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/UIs1SZ-aMCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                            <motion.iframe width="100%" height="320" src="https://www.youtube.com/embed/UIs1SZ-aMCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                             variants={secondanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
 
                         </div>
