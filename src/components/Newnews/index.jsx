@@ -94,7 +94,7 @@ export default function Newnews() {
                                 variants={secondanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
                         </div>
                     </div>
-                    {/* <div class="row"
+                     <div class="row"
                         style={{ display: "flex", justifyContent: "center",alignItems:"center",marginTop:"1rem", marginRight: "0", padding: "0.5rem 0" }}>
                         <div class="col-lg-4" style={{display:"flex",justifyContent:"center", padding:"0" ,marginTop:"1rem"}}>
                             <motion.iframe width="450" height="300" src="https://www.youtube.com/embed/pL9FrqLPB7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
@@ -110,7 +110,7 @@ export default function Newnews() {
                             原聲帶:<br />&emsp;漫漫長夜<br />
                             &emsp;Until The End<br /><i className={styles.click}  onClick={() => { setClicked2(!isClicked2) }} style={{fontSize:"0.8rem",marginTop:"11rem",cursor:"pointer"}}>更多</i>
                             </motion.p>
-                            <motion.p variants={typingContainer} initial="hidden"  animate={isClicked2 ? 'show' : 'hidden'}>
+                            <motion.p variants={typingContainer} initial="hidden"  animate={isClicked2 ? 'show' : 'hidden'} style={{width:"20rem",height:"auto"}}>
                                 {
                                     Array.from("描述夢想成為建築師的文同珢在高中因被朴涎鎮、全宰寯等人霸凌而主動退學。數年後朴涎鎮當上氣象主播，還與上流人士河度領風光結婚生子，但就在孩子上小學，蟄伏多年的文同珢現身該校擔任孩子的班導師，開始對當年的霸凌者朴涎鎮等人進行徹底報復的故事").map((word, i) => (
                                         <motion.span key={i} variants={typingText}>{word}</motion.span>
@@ -132,7 +132,7 @@ export default function Newnews() {
                             原聲帶:<br />&emsp;Wednesday Main Titles<br />
                             &emsp;Morticia and Wednesday<br /><i className={styles.click}  onClick={() => { setClicked3(!isClicked3) }} style={{fontSize:"0.8rem",marginTop:"11rem",cursor:"pointer"}}>更多</i>
                             </motion.p>
-                            <motion.p variants={typingContainer} initial="hidden" animate={isClicked3 ? 'show' : 'hidden'}>
+                            <motion.p variants={typingContainer} initial="hidden" animate={isClicked3 ? 'show' : 'hidden'} style={{width:"20rem",height:"auto"}}>
                                 {
                                     Array.from("一部美國恐怖喜劇電視劇，星期三因幫弟弟報仇，而對惡霸惡作劇後遭原高中退學，轉學至奈落學院。在這裡除了學會與人相處的道理，更要學會掌握自己的幻視能力。然而在這學期除了要破解神秘的殺人案，更重要的是要解開奈落學院的過往").map((word, i) => (
                                         <motion.span key={i} variants={typingText}>{word}</motion.span>
@@ -146,7 +146,7 @@ export default function Newnews() {
                             variants={secondanimation} initial="hidden" whileInView="visible" viewport={{ once: true }}></motion.iframe>
 
                         </div>
-                    </div> */}
+                    </div> 
                 </div>
 
                 <div class="row" style={{}}>
